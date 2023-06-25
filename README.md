@@ -11,6 +11,8 @@ SoundSage is an advanced audio processing system that integrates automated audio
 
 ### How It Works
 
+ The LLM integration process involves the LLM interpreting a user prompt, extracting key information, and using this information to execute a series of actions. The LLM is designed to interpret user prompts and translate them into a series of actions that the system can execute. This process involves a number of scripts that work together to manage files, interact with the OpenAI API, and control the AutoGain tool. These actions include navigating to the specified folder, copying the audio files, pasting them into the "PreProcess" folder, initiating the AutoGain tool, and finally copying the processed files into a new folder. The completion script then sends a signal to indicate that the process is complete and provides the user with information about the location of the processed files.
+
 1. **Interpreting User Prompts**: When a user provides a prompt to SoundSage, the LLM analyzes the prompt to understand the user's intent. This involves parsing the prompt, identifying key words and phrases related to audio processing tasks, and extracting any additional information that might be relevant, such as the location of the audio files to be processed.
 
 2. **Generating Commands**: Once the LLM has interpreted the user's prompt, it generates a list of commands for the audio processing tools. These commands are specific to the tasks that the user has requested, such as gain staging, EQ adjustment, or noise reduction. The LLM generates these commands in a format that the audio processing tools can understand and execute.
@@ -19,30 +21,28 @@ SoundSage is an advanced audio processing system that integrates automated audio
 
 4. **Providing Feedback to the User**: After the audio processing tasks have been completed, the LLM generates a response to the user. This response includes information about the tasks that were performed, any changes that were made to the audio files, and the location of the processed files. The response is designed to be easily understood by the user, providing them with a clear and concise summary of the audio processing workflow.
 
-The integration of the Language Learning Model (LLM) with the AutoGain tool is a crucial part of the SoundSage system. The LLM is designed to interpret user prompts and translate them into a series of actions that the system can execute. This process involves a number of scripts that work together to manage files, interact with the OpenAI API, and control the AutoGain tool.
+Scripts:
 
-Scripts
-chatbot_code_writer.py: This script uses the OpenAI API to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
+ )chatbot_code_writer.py: This script uses the OpenAI API to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
 
-file_management.py: This script handles file management tasks. It contains functions for navigating to a specified folder, copying files, and pasting files.
+ )file_management.py: This script handles file management tasks. It contains functions for navigating to a specified folder, copying files, and pasting files.
 
-error_handling.py: This script handles errors that might occur during the execution of your application. It also contains functions for providing progress updates to the user.
+ )error_handling.py: This script handles errors that might occur during the execution of your application. It also contains functions for providing progress updates to the user.
 
-completion_handling.py: This script handles the completion of the process. It contains a function for sending a signal to the LLM to respond that the process is complete, and a function for checking the new folder to ensure that the process completed successfully.
+ )completion_handling.py: This script handles the completion of the process. It contains a function for sending a signal to the LLM to respond that the process is complete, and a function for checking the new folder to ensure that the process completed successfully.
 
-template_code.py: This script contains the template code that the chatbot modifies. It is designed to work with the specified files and directories.
+ )template_code.py: This script contains the template code that the chatbot modifies. It is designed to work with the specified files and directories.
 
-main.py: This is the main script that runs your application. It imports and uses the functions from the other scripts.
+ )main.py: This is the main script that runs your application. It imports and uses the functions from the other scripts.
 
-menu_functions.py: This script contains functions that get executed when the menu options are selected. For example, it might contain a function for creating a new file when "New.." is selected, a function for saving the current state of the application when "Save As.." is selected, and so on.
+ )menu_functions.py: This script contains functions that get executed when the menu options are selected. For example, it might contain a function for creating a new file when "New.." is selected, a function for saving the current state of the application when "Save As.." is selected, and so on.
 
-send_button_functionality.py: This script contains the function that gets executed when the "Send" button is clicked. This function takes the user's input, sends it to the OpenAI API, and displays the response in the chat window.
+ )send_button_functionality.py: This script contains the function that gets executed when the "Send" button is clicked. This function takes the user's input, sends it to the OpenAI API, and displays the response in the chat window.
 
-autogain_interaction.py: This script contains functions for interacting with the AutoGain software. It contains functions for sending commands to the software and handling its responses.
+ )autogain_interaction.py: This script contains functions for interacting with the AutoGain software. It contains functions for sending commands to the software and handling its responses.
 
-audio_analysis.py and audio_processor.py: These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
+ )audio_analysis.py and audio_processor.py: These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
 
-The LLM integration process involves the LLM interpreting a user prompt, extracting key information, and using this information to execute a series of actions. These actions include navigating to the specified folder, copying the audio files, pasting them into the "PreProcess" folder, initiating the AutoGain tool, and finally copying the processed files into a new folder. The LLM then sends a signal to indicate that the process is complete and provides the user with information about the location of the processed files.
 
 ## AutoGain
 
