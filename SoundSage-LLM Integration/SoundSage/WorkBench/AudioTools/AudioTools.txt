@@ -1,0 +1,5 @@
+AudioTools
+
+This is where the system will store all of its Audio Processing tools beginning with AutoGain
+but in the future we will have a wide array of tools such as, AutoEQ, AutoQuantize, AutoDynamics, AutoStereo, AutoLimiter, AutoPitch etc... 
+(open to recommendations for better names to call our tool set)
