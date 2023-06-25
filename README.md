@@ -30,13 +30,13 @@ SoundSage plans to integrate more tools for automated audio processing, includin
 
 ## Potential Modules
 
-Here are some potential modules that could be used in the SoundSage project:
+Here are some potential modules that could be used in the SoundSage LLM integration:
 
-### Audiocraft
+- **transformers**: A Python library for state-of-the-art natural language processing, developed by Hugging Face. It provides pre-trained models for several major LLMs, including OpenAI's GPT-3 and Google's BERT. The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
-- **Repository**: [https://github.com/facebookresearch/audiocraft](https://github.com/facebookresearch/audiocraft)
-- **License**: MIT for the code, CC-BY-NC 4.0 for the weights
-- **Description**: Audiocraft is a PyTorch library for deep learning research on audio generation. It contains the code for MusicGen, a state-of-the-art controllable text-to-music model. This could potentially be used for generating audio based on user prompts.
+- **spaCy**: A Python library for advanced natural language processing. It provides functionalities for part-of-speech tagging, named entity recognition, and dependency parsing, among others. This could be used to enhance the LLM's ability to interpret user prompts. The library is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+- **nltk (Natural Language Toolkit)**: A Python library for working with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources. This could be used to enhance the LLM's understanding of natural language. The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
 ### torchaudio
 
@@ -45,7 +45,7 @@ Here are some potential modules that could be used in the SoundSage project:
 - **Description**: torchaudio is an audio library for PyTorch. It provides a variety of audio transforms, supports audio I/O, and has dataloaders for common audio datasets. This could be used for loading and saving audio files, as well as performing common audio transformations.
 
 
-### Modules Used in AutoGain
+### Modules Used in SoundSage and AutoGain
 
 - `tkinter`: Used for creating the GUI.
 - `PIL`: Used for image processing.
@@ -77,3 +77,4 @@ The licensing information for the modules and functions used in the AutoGain scr
 - `tkinter`, `PIL`, `shutil`: These are part of the Python Standard Library and are covered by the [Python Software Foundation License](https://docs.python.org/3/license.html).
 - `ffprobe`, `ffmpy`: These are licensed under the [GNU General Public License (GPL) version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 - `audio_analysis`, `audio_processor`, `openai_interaction`: These are custom modules made by SoundSage
+- `openai api`: this is part of OpenAI's  open source license (https://github.com/openai/openai-openapi/blob/master/LICENSE).
