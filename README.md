@@ -1,10 +1,9 @@
-# AutoGain-SoundSage
+# SoundSage - LLM Integration(Text to Industry Standard Audio Processing)
+
 **WORK IN PROGRESS **
 Open source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but 'AutoGain' the original gain-staging application is very functional.
 
 See the AutoGain branch for the Working system that does not involve an LLM, this branch is specific to the LLM Integration. 
-
-
 
 # SoundSage
 
@@ -14,7 +13,39 @@ SoundSage is an advanced audio processing system that integrates automated audio
 
 AutoGain is the first of many audio tools that the SoundSage system uses to process audio based on a user's prompt. The AutoGain tool automates gain staging by analyzing the file and either boosting, turning down, or simply doing nothing to the specified file.
 
-### Modules Used
+## Future Tools
+
+SoundSage plans to integrate more tools for automated audio processing, including:
+
+- AutoEQ
+- AutoCompressor
+- AutoLimiter
+- AutoReverb
+- AutoDelay
+- AutoNoise Reduction
+- AutoEnhancer
+- AutoStereo Widener
+- AutoPitch Corrector
+- AutoTime Stretcher
+
+## Potential Modules
+
+Here are some potential modules that could be used in the SoundSage project:
+
+### Audiocraft
+
+- **Repository**: [https://github.com/facebookresearch/audiocraft](https://github.com/facebookresearch/audiocraft)
+- **License**: MIT for the code, CC-BY-NC 4.0 for the weights
+- **Description**: Audiocraft is a PyTorch library for deep learning research on audio generation. It contains the code for MusicGen, a state-of-the-art controllable text-to-music model. This could potentially be used for generating audio based on user prompts.
+
+### torchaudio
+
+- **Repository**: [https://github.com/pytorch/audio](https://github.com/pytorch/audio)
+- **License**: BSD-3-Clause
+- **Description**: torchaudio is an audio library for PyTorch. It provides a variety of audio transforms, supports audio I/O, and has dataloaders for common audio datasets. This could be used for loading and saving audio files, as well as performing common audio transformations.
+
+
+### Modules Used in AutoGain
 
 - `tkinter`: Used for creating the GUI.
 - `PIL`: Used for image processing.
