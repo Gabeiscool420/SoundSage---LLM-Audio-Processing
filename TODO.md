@@ -35,7 +35,7 @@
 
 - [x] [audio_processor.py](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_processor.py)
 
-- [ ] [main.py](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py) (this may need to be modified as it is currently a GUI for  AutoGain)
+- [x] [main.py](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py) (this may need to be modified as it is currently a GUI for  AutoGain)
 
 please see [requirements.txt](requirements.txt) for require modules.
 
