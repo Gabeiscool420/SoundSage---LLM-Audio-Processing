@@ -14,7 +14,7 @@ SoundSage is an advanced audio processing system that integrates automated audio
  The LLM integration process involves the LLM interpreting a user prompt, extracting key information, and using this information to execute a series of actions. The LLM is designed to interpret user prompts and translate them into a series of actions that the system can execute. This process involves a number of scripts that work together to manage files, interact with the OpenAI API, and control the AutoGain tool. These actions include navigating to the specified folder, copying the audio files, pasting them into the "PreProcess" folder, initiating the AutoGain tool, and finally copying the processed files into a new folder. The completion script then sends a signal to indicate that the process is complete and provides the user with information about the location of the processed files. Please see the SoundSage FlowChart for a full visualization of the intended process.
  
 <img
-  src="/Users/mac/Desktop/SoundSage-LLM Integration"
+  src="SoundSage-LLM Integration/LOGO.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
