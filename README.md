@@ -31,25 +31,25 @@ SoundSage is an advanced audio processing system that integrates automated audio
 
 ### Micro-level Overview of Implementation:
 
-**chatbot_code_writer.py**: This script uses the OpenAI API to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
+**chatbot_code_writer.py*: This script uses the OpenAI API to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
 
-**file_management.py**: This script handles file management tasks. It contains functions for navigating to a specified folder, copying files, and pasting files.
+**file_management.py*: This script handles file management tasks. It contains functions for navigating to a specified folder, copying files, and pasting files.
 
-**error_handling.py**: This script handles errors that might occur during the execution of your application. It also contains functions for providing progress updates to the user.
+**error_handling.py*: This script handles errors that might occur during the execution of your application. It also contains functions for providing progress updates to the user.
 
-**completion_handling.py**: This script handles the completion of the process. It contains a function for sending a signal to the LLM to respond that the process is complete, and a function for checking the new folder to ensure that the process completed successfully.
+**completion_handling.py*: This script handles the completion of the process. It contains a function for sending a signal to the LLM to respond that the process is complete, and a function for checking the new folder to ensure that the process completed successfully.
 
-**template_code.py**: This script contains the template code that the chatbot modifies. It is designed to work with the specified files and directories.
+**template_code.py*: This script contains the template code that the chatbot modifies. It is designed to work with the specified files and directories.
 
-**main.py**: This is the main script that runs your application. It imports and uses the functions from the other scripts.
+**main.py*: This is the main script that runs your application. It imports and uses the functions from the other scripts.
 
-**menu_functions.py**: This script contains functions that get executed when the menu options are selected. For example, it might contain a function for creating a new file when "New.." is selected, a function for saving the current state of the application when "Save As.." is selected, and so on.
+**menu_functions.py*: This script contains functions that get executed when the menu options are selected. For example, it might contain a function for creating a new file when "New.." is selected, a function for saving the current state of the application when "Save As.." is selected, and so on.
 
-**send_button_functionality.py**: This script contains the function that gets executed when the "Send" button is clicked. This function takes the user's input, sends it to the OpenAI API, and displays the response in the chat window.
+**send_button_functionality.py*: This script contains the function that gets executed when the "Send" button is clicked. This function takes the user's input, sends it to the OpenAI API, and displays the response in the chat window.
 
-**autogain_interaction.py**: This script contains functions for interacting with the AutoGain software. It contains functions for sending commands to the software and handling its responses.
+**autogain_interaction.py*: This script contains functions for interacting with the AutoGain software. It contains functions for sending commands to the software and handling its responses.
 
-**audio_analysis.py**: and audio_processor.py: These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
+**audio_analysis.py and audio_processor.py*: These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
 
 
 ## AutoGain
