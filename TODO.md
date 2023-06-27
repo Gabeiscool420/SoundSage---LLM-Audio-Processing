@@ -8,17 +8,17 @@
 
 >SoundSage 
  
-  >Workbench
+    >Workbench
 
-  >PreProcess
+    >PreProcess
 
-  >PostProcess
+    >PostProcess
 
-  >Archive
+    >Archive
 
-  >AudioTools
+    >AudioTools
 
-   >AutoGain
+      >AutoGain
 
 - [x]audio_analysis.py
 
