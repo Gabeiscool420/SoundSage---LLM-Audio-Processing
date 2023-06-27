@@ -4,7 +4,7 @@
 
 
 
-Open source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but 'AutoGain' the original gain-staging application is very functional.
+Open source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the original gain-staging application is very functional.
 
 See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) branch for the Working system that does not involve an LLM, this branch is specific to the LLM Integration. 
 
@@ -21,7 +21,7 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
 
 ## Contributing
 
-Thank you for considering contributing to our project! Anyone can contribute we just ask you to adhere to our guidelines!
+Thank you for considering contributing to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage)! Anyone can contribute we just ask you to adhere to our guidelines!
 For Contribution Guidelines please see [CONTRIBUTIONS.md](CONTRIBUTIONS.md). If everything looks good too you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made aswell as cite any code you may have borrowed! 
 
 
@@ -94,7 +94,7 @@ Resource Consumption: The application may require significant processing power a
 
 **To enhance the algorithm's performance and improve the existing ML algorithm's accuracy:**
 
-Augment the LLM with a domain-specific model: A domain-specific NLP model trained on a corpus of audio processing-related documents and instructions can supplement the LLM to improve the precision of command interpretation and generation. This model could use libraries like [Hugging Face](https://huggingface.co/terms-of-service)'s transformers or spaCy for added language processing capabilities.
+Augment the LLM with a domain-specific model: A domain-specific NLP model trained on a corpus of audio processing-related documents and instructions can supplement the LLM to improve the precision of command interpretation and generation. This model could use libraries like [Hugging Face](https://huggingface.co/terms-of-service)'s transformers or [spaCy](https://spacy.io/api/doc) for added language processing capabilities.
 
 Optimize Script Interaction: Streamline communication between scripts by creating a central controller script to manage the flow of data and commands. This approach could boost efficiency and speed up operations.
 
@@ -106,7 +106,7 @@ a. Data Collection: Gather a substantial corpus of documents related to audio pr
 
 b. Preprocessing: Clean the collected data to remove any irrelevant information, and convert it into a format that can be used for model training.
 
-c. Model Training: Use a library like Hugging Face's transformers or spaCy to train a domain-specific model on the preprocessed data.
+c. Model Training: Use a library like [Hugging Face](https://huggingface.co/terms-of-service)'s transformers or [spaCy](https://spacy.io/api/doc) to train a domain-specific model on the preprocessed data.
 
 d. Integration: Integrate the trained model into the LLM, ensuring that the model is invoked when the LLM is interpreting user prompts related to audio processing.
 
@@ -148,17 +148,17 @@ d. Testing: Run tests to confirm that the application is running more efficientl
 
 ## APIs
 
-- `OpenAI API`: Used for generating Python code based on user input.
+- [OpenAI API](https://openai.com/policies/terms-of-use): Used for generating Python code based on user input.
 
 ## Sources
 
-- AutoGain scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`
+- [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`
 
 ## Potential Modules
 
-Here are some potential modules that could be used in the SoundSage LLM integration:
+Here are some potential modules that could be used in the [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) LLM integration:
 
-- **transformers**: A Python library for state-of-the-art natural language processing, developed by Hugging Face. It provides pre-trained models for several major LLMs, including OpenAI's GPT-3 and Google's BERT. The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+- **transformers**: A Python library for state-of-the-art natural language processing, developed by [Hugging Face](https://huggingface.co/terms-of-service). It provides pre-trained models for several major LLMs, including [OpenAI](https://openai.com/policies/terms-of-use)'s GPT-3 and [Google's BERT](https://cloud.google.com/ai-platform/training/docs/algorithms/bert-start). The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
 - **scikit-learn**: This is a machine learning library in Python. It features various classification, regression and clustering algorithms, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. This module is distributed under the [3-Clause BSD license​](https://github.com/scikit-learn/scikit-learn).
 
@@ -177,7 +177,7 @@ The licensing information for the modules and functions used in the AutoGain scr
 - `tkinter`, `PIL`, `shutil`: These are part of the Python Standard Library and are covered by the [Python Software Foundation License](https://docs.python.org/3/license.html).
 - `ffprobe`, `ffmpy`: These are licensed under the [GNU General Public License (GPL) version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 - [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`: These are custom modules made by [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/edit/SoundSage---LLM-Integration).
-- `openai api`: this is part of OpenAI's  [open source license](https://github.com/openai/openai-openapi/blob/master/LICENSE).
+- [OpenAI API](https://openai.com/policies/terms-of-use): this is part of OpenAI's  [open source license](https://github.com/openai/openai-openapi/blob/master/LICENSE).
 
 
    <div style="text-align: center;">
