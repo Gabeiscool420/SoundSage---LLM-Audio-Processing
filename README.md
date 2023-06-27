@@ -19,11 +19,12 @@ SoundSage is an advanced audio processing system that integrates automated audio
 ![SoundSage - AutoGain Workflow](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/assets/130602253/57c1aedb-5e18-4ea4-84c8-56a0aa21bd12)
 
 
-**Contributing
+##Contributing
 
 Thank you for considering contributing to our project! Anyone can contribute we just ask you to adhere to our guidelines!
 For Contribution Guidelines please see [CONTRIBUTIONS.md](CONTRIBUTIONS.md). If everything looks good too you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made aswell as cite any code you may have borrowed! 
-*The SoundSage Team
+
+####*The SoundSage Team
 Cheers! :)*
 
 ### Macro-level Overview of Implementation:
