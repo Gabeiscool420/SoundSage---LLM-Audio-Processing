@@ -61,7 +61,7 @@ Once you have the AutoGain UI open you can select the files you want to be proce
 
 - `audio_analysis.py`: Analyzes the audio prior to processing.
 - `audio_processor.py`: Processes the audio based on the analysis.
-
+- `main.py`: This is the UI enabling you to choose files and destination directories.
 
 ## User Interface
 
@@ -69,13 +69,15 @@ AutoGain has a simple UI for choosing files and the intended destination directo
 
 SoundSage plans to integrate more tools for automated audio processing, including:
 
-- AutoEQ
-- AutoCompressor
-- AutoLimiter
-- AutoReverb
-- AutoDelay
-- AutoNoise Reduction
-- AutoEnhancer
-- AutoStereo Widener
-- AutoPitch Corrector
-- AutoTime Stretcher
+- `AutoEQ`
+- `AutoCompressor`
+- `AutoLimiter`
+- `AutoReverb`
+- `AutoDelay`
+- `AutoNoise Reduction`
+- `AutoEnhancer`
+- `AutoStereo Widener`
+- `AutoPitch Corrector`
+- `AutoTime Stretcher`
+- `AutoDynamics`
+- `AutoCut/Fade`
