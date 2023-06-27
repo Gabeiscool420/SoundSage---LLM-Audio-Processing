@@ -1,12 +1,5 @@
 # Contributing to SoundSage---LLM-Audio-Processing-Integration
 
-<div style="text-align: center;">
-    <img
-      src="SoundSage-LLM Integration/LOGO.png"
-      alt="SoundSage Logo"
-      title="SoundSage Logo"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
-</div>
 
 First off, thank you for considering contributing to SoundSage---LLM-Audio-Processing-Integration. It's people like you that make SoundSage such a great tool.
 
@@ -56,6 +49,14 @@ All Python must adhere to the [PEP 8 style guide](https://www.python.org/dev/pep
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the [SoundSage Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [info.SoundSage@gmail.com]
+
+<div style="text-align: center;">
+    <img
+      src="SoundSage-LLM Integration/LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+</div>
 
 ## Thank You!
 
