@@ -1,15 +1,5 @@
 # SoundSage LLM Integration (text-to-audio-processing)
 
-
-   <div style="text-align: center;">
-    <img
-      src="SoundSage-LLM Integration/LOGO.png"
-      alt="Alt text"
-      title="Optional title"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
-   </div>
-
-
    <div style="text-align: center;"> **WORK IN PROGRESS**
 
 
@@ -177,3 +167,14 @@ The licensing information for the modules and functions used in the AutoGain scr
 - `ffprobe`, `ffmpy`: These are licensed under the [GNU General Public License (GPL) version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 - AutoGain scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`: These are custom modules made by [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/edit/SoundSage---LLM-Integration).
 - `openai api`: this is part of OpenAI's  [open source license](https://github.com/openai/openai-openapi/blob/master/LICENSE).
+
+
+   <div style="text-align: center;">
+    <img
+      src="SoundSage-LLM Integration/LOGO.png"
+      alt="Alt text"
+      title="Optional title"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+   </div>
+
+
