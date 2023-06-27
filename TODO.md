@@ -6,17 +6,17 @@
 
 ## Project Directory:
 
-*>SoundSage 
+>SoundSage 
  
- >Workbench
+  >Workbench
 
- >PreProcess
+  >PreProcess
 
- >PostProcess
+  >PostProcess
 
- >Archive
+  >Archive
 
- >AudioTools
+  >AudioTools
 
    >AutoGain
 
