@@ -37,7 +37,7 @@
 
 - [ ] [main.py](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py) (this may need to be modified as it is currently a GUI for  AutoGain)
 
-     *>nenv ***see actual Directory for more details...* 
+please see [requirements.txt](requirements.txt) for require modules.
 
 ## Detailed To-Do List:
 
