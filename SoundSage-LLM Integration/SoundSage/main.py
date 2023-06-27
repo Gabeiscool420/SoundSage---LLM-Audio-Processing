@@ -2,6 +2,8 @@ from tkinter import messagebox, Menu, Tk, Text, Button, Scrollbar
 import openai_interaction
 import menu_functions
 import send_button_functionality
+import chatbot_code_writer
+import error_handling
 
 def main():
     # Initialize the application
@@ -20,7 +22,9 @@ def main():
 
     # Add commands to the file menu
     file_menu.add_command(label="New..", command=menu_functions.new_file)
-    file_menu.add_command(label="Save As..", command=menu_functions.save_as)
+    file_menu.add_command(label="Save As..", command=menu_functions.save_asApologies for the cut-off in the previous message. Here's the continuation of the `main.py` script:
+
+```python
     file_menu.add_command(label="Exit", command=root.quit)
 
     # Add the rest of the menu options to the main menu
@@ -49,4 +53,8 @@ def main():
     root.mainloop()
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        error_handling.handle_error(e)
+
