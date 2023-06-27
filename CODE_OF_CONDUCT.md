@@ -181,6 +181,14 @@ https://www.contributor-covenant.org/translations.
 
 [info.SoundSage@gmail.com]
 
+<div style="text-align: center;">
+    <img
+      src="SoundSage-LLM Integration/LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+</div>
+
 ## 15. License and attribution
 
 This Code of Conduct is distributed under a Creative Commons Attribution-ShareAlike license.
