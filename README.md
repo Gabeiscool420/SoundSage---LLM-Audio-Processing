@@ -8,11 +8,11 @@ Open source Python program for automating Audio Processing using natural languag
 
 See the AutoGain branch for the Working system that does not involve an LLM, this branch is specific to the LLM Integration. 
 
-## SoundSage
+# SoundSage
 
 SoundSage is an advanced audio processing system that integrates automated audio tools with a language learning model (LLM) like OpenAI's ChatGPT. The system allows users to prompt a list of commands for audio processing, such as gain staging, balancing, subtractive EQ, noise reduction, and compression.
 
-### How It Works
+## How It Works
 
  The LLM integration process involves the LLM interpreting a user prompt, extracting key information, and using this information to execute a series of actions. The LLM is designed to interpret user prompts and translate them into a series of actions that the system can execute. This process involves a number of scripts that work together to manage files, interact with the OpenAI API, and control the AutoGain tool. These actions include navigating to the specified folder, copying the audio files, pasting them into the "PreProcess" folder, initiating the AutoGain tool, and finally copying the processed files into a new folder. The completion script then sends a signal to indicate that the process is complete and provides the user with information about the location of the processed files. Please see the SoundSage FlowChart for a full visualization of the intended process.
  
@@ -58,7 +58,7 @@ AutoGain is the first of many audio tools that the SoundSage system uses to proc
 
 ## Future Tools
 
-#### SoundSage plans to integrate more tools for automated audio processing, including:
+### SoundSage plans to integrate more tools for automated audio processing, including:
 
 - AutoEQ
 - AutoCompressor
@@ -89,7 +89,7 @@ Optimize Script Interaction: Streamline communication between scripts by creatin
 
 Leverage Efficient Computing Resources: Use optimized ML libraries and compute platforms to reduce resource consumption. Also, consider using cloud-based solutions for scalable and efficient processing.
 
-#### Augmenting the LLM with a domain-specific model:
+### Augmenting the LLM with a domain-specific model:
 
 a. Data Collection: Gather a substantial corpus of documents related to audio processing. This corpus could include user manuals, online forums, tutorials, and any other text that contains detailed instructions or discussions about audio processing tasks.
 
@@ -99,7 +99,7 @@ c. Model Training: Use a library like Hugging Face's transformers or spaCy to tr
 
 d. Integration: Integrate the trained model into the LLM, ensuring that the model is invoked when the LLM is interpreting user prompts related to audio processing.
 
-#### Optimizing Script Interaction:
+### Optimizing Script Interaction:
 a. Identify Bottlenecks: Analyze the current script interaction process to identify any areas where inefficiencies may occur. This could involve running performance tests or reviewing the code to understand how data and commands are passed between scripts.
 
 b. Design Central Controller: Design a central controller script that will manage the flow of data and commands between scripts. This script should be designed to handle any issues identified in the bottleneck analysis.
@@ -108,7 +108,7 @@ c. Implementation: Rewrite the existing scripts as needed to interact with the c
 
 d. Testing: Run tests to confirm that the central controller is correctly managing script interactions and that the system is running more efficiently.
 
-#### Leveraging Efficient Computing Resources:
+### Leveraging Efficient Computing Resources:
 
 a. Identify Resource Intensive Tasks: Identify which parts of the application are most resource-intensive. This could be done by monitoring resource usage during typical tasks.
 
@@ -118,7 +118,7 @@ c. Implement Changes: Replace the identified libraries or platforms with the mor
 
 d. Testing: Run tests to confirm that the application is running more efficiently and that the changes have not introduced any new issues.
 
-### Modules Currently Used in SoundSage and AutoGain
+## Modules Currently Used in SoundSage and AutoGain
 
 - `tkinter`: Used for creating the GUI.
 - `PIL`: Used for image processing.
@@ -129,17 +129,17 @@ d. Testing: Run tests to confirm that the application is running more efficientl
 - `shutil`: Used for copying files.
 - `openai_interaction`: Custom module for interacting with the OpenAI API.
 
-### Functions
+## Functions
 
 - `open_files()`: Opens the file dialog to select audio files.
 - `choose_output_directory()`: Opens the directory dialog to select the output directory.
 - `begin_process()`: Starts the audio processing.
 
-### APIs
+## APIs
 
 - `OpenAI API`: Used for generating Python code based on user input.
 
-### Sources
+## Sources
 
 - AutoGain scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`
 
