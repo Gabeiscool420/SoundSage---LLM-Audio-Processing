@@ -83,3 +83,10 @@
 AutoGain is the first of many audio tools that the SoundSage system uses to process audio based on a user's prompt. The AutoGain tool automates gain staging by analyzing the file and either boosting, turning down, or simply doing nothing to the specified file.
 
 
+<div style="text-align: center;">
+    <img
+      src="SoundSage-LLM Integration/LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+</div>
