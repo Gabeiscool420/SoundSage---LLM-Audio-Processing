@@ -16,7 +16,7 @@ Open-source Python program for automating Audio Processing using natural languag
 
 See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) branch for the Working system that does not involve an LLM, this branch is specific to the LLM Integration. 
 
-# SoundSage
+# SoundSage🦉
 
 [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) is an advanced audio processing system that integrates automated audio tools with a language learning model (LLM) like [OpenAI API](https://openai.com/policies/terms-of-use). The system allows users to prompt a list of commands for audio processing, such as gain staging, balancing, subtractive EQ, noise reduction, and compression.
 
