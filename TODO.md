@@ -41,46 +41,46 @@ please see [requirements.txt](requirements.txt) for require modules.
 
 ## Detailed To-Do List:
 
-1. **Autogain_interaction.py**
+1. [**autogain_interaction.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/autogain_interaction.py)
     - [ ] Implement functions for sending commands to the AutoGain software.
     - [ ] Implement functions for handling responses from the AutoGain software.
 
-2. **chatbot_code_writer.py**
+2. [**chatbot_code_writer.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/chatbot_code_writer.py)
     - [ ] Implement function for generating Python code based on user's input.
     - [ ] Implement function for modifying a template code to create a new script.
 
-3. **Completion_handling.py**
+3. [**completion_handling.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/completion_handling.py)
     - [ ] Implement function for sending a signal to the LLM to respond that the process is complete.
     - [ ] Implement function for checking the new folder to ensure that the process completed successfully.
 
-4. **Error_handling.py**
+4. [**error_handling.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/error_handling.py)
     - [ ] Implement function for handling errors that might occur during the execution of the application.
     - [ ] Implement function for providing progress updates to the user.
 
-5. **File_management.py**
+5. [**file_management.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/file_management.py)
     - [ ] Implement function for navigating to a specified folder.
     - [ ] Implement function for copying files.
     - [ ] Implement function for pasting files.
 
-6. **Main.py**
+6. **SoundSage Main** [**main.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/main.py)
     - [ ] Implement main function that runs the application.
     - [ ] Import and use the functions from the other scripts.
 
-7. **Menu_functions.py**
+7. [**menu_functions.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/menu_functions.py)
     - [ ] Implement functions that get executed when the menu options are selected.
 
-8. **Openai_interaction.py**
+8. [**openai_interaction.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/openai_interaction.py)
     - [ ] Implement function for sending user's input to the OpenAI API.
     - [ ] Implement function for receiving and processing the response from the OpenAI API.
 
-9. **Send_button_functionality.py**
+9. [**send_button_functionality.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/send_button_funtionality.py)
     - [ ] Implement function that gets executed when the "Send" button is clicked.
 
-10. **Template_code.py**
+10. [**template_code.py**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/template_code.py)
     - [ ] Implement function for modifying the template code based on user's input.
 
 ## AutoGain
-AutoGain is the first of many audio tools that the SoundSage system uses to process audio based on a user's prompt. The AutoGain tool automates gain staging by analyzing the file and either boosting, turning down, or simply doing nothing to the specified file.
+[AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) is the first of many audio tools that the [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) system uses to process audio based on a user's prompt. The [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) tool automates gain staging by analyzing the file and either boosting, turning down, or simply doing nothing to the specified file.
 
 
 <div style="text-align: center;">
