@@ -1,5 +1,10 @@
 import openai
 import os
+import spacy
+import re
+
+# Load the SpaCy model
+nlp = spacy.load("en_core_web_sm")
 
 openai.organization = "YOUR ORG-ID"
 openai.api_key = os.getenv("YOUR OPENAI API-KEY")
