@@ -12,15 +12,15 @@ processed audio files to be designated for export.
 ### Step 1: Install Python
 
 
-Visit the Python website at https://www.python.org/downloads/
-Download Python3.10
+Visit the [Python website](https://www.python.org)
+[Download Python3.10](https://www.python.org/downloads/)
 Run the installer and follow the installation instructions, making sure to check the box that says "Add Python to PATH" during installation.
 
 ### Step 2: Install PyCharm
 
 
-Visit the PyCharm website at https://www.jetbrains.com/pycharm/download/
-Download the Community Edition of PyCharm.
+Visit the [PyCharm website](https://www.jetbrains.com/pycharm/).
+Download the [Community Edition of PyCharm](https://www.jetbrains.com/pycharm/download/).
 Run the installer and follow the installation instructions.
 
 ### Step 3: Set up the project
@@ -37,14 +37,16 @@ PyCharm will automatically detect the virtual environment (venv) in the project 
 Open Terminal 
 Individually copy and paste the following commands into terminal to install the required packages, press enter to run the command:
 
-pip install librosa
-pip install numpy
-pip install pyloudnorm
-pip install tkinter
-pip install Pillow
+- `pip install librosa`
+- `pip install numpy`
+- `pip install pyloudnorm`
+- `pip install tkinter`
+- `pip install Pillow`
 
-*note: If pip doesn’t work try pip3, if that doesn't work try: “python3 -m pip install --upgrade pip” If none of this works it is because you need to install pip by putting this command in the terminal: 
-“curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py”. Now try installing the required packages above.
+*note: If pip doesn’t work try pip3, if that doesn't work try: 
+- `python3 -m pip install --upgrade pip` 
+If none of this works it is because you need to install pip by putting this command in the terminal: 
+- `“curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py”`: Now try installing the required packages above.
 
 ### Step 5: Run the program
 
