@@ -1,4 +1,4 @@
-![SoundSage - AutoGain Workflow](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/assets/130602253/169dc0f5-018e-4380-b504-b19bca15c0a3)# SoundSage - LLM Integration(Text-to-AudioProcessing)
+
 
 
    <div style="text-align: center;">
