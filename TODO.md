@@ -4,6 +4,9 @@
 - [ ] = exists but is not complete
 - [x] = is complete
 
+- > = Directory(stacks like: >> or >>> etc... for directory within a directory)
+
+
 ## Project Directory:
 
 [>SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) 
