@@ -30,7 +30,7 @@ For Contribution Guidelines please see [CONTRIBUTIONS.md](CONTRIBUTIONS.md). If 
 
 ### Macro-level Overview of Implementation:
 
-1. **Interpreting User Prompts**: When a user provides a prompt to SoundSage, the LLM analyzes the prompt to understand the user's intent. This involves parsing the prompt, identifying key words and phrases related to audio processing tasks, and extracting any additional information that might be relevant, such as the location of the audio files to be processed.
+1. **Interpreting User Prompts**: When a user provides a prompt to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage), the LLM analyzes the prompt to understand the user's intent. This involves parsing the prompt, identifying key words and phrases related to audio processing tasks, and extracting any additional information that might be relevant, such as the location of the audio files to be processed.
 
 2. **Generating Commands**: Once the LLM has interpreted the user's prompt, it generates a list of commands for the audio processing tools. These commands are specific to the tasks that the user has requested, such as gain staging, EQ adjustment, or noise reduction. The LLM generates these commands in a format that the audio processing tools can understand and execute.
 
