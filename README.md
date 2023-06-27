@@ -2,9 +2,16 @@
 
 **WORK IN PROGRESS**
 
+Welcome to SoundSage! If you are reading this then you are one of the lucky few to know of our journey! &#128640; 
+
+We are on a mission to create the world's first AI-based audio processing suite: The tools use AI to analyze and process audio files, improving the quality and efficiency of the audio processing workflow.
+User-friendly interface: The tool features a simple and intuitive interface, making it easy for users to navigate and use the tool.
+Efficient workflow: The tool is designed to streamline the audio processing workflow, allowing users to process audio files quickly and easily.
+Operating Environment
+The product is designed to operate in a standard computing environment. It requires a computer with sufficient processing power to run the AI algorithms and enough storage space to store the audio files.
 
 
-Open source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the original gain-staging application is very functional.
+Open-source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, the end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the original gain-staging application is very functional.
 
 See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) branch for the Working system that does not involve an LLM, this branch is specific to the LLM Integration. 
 
