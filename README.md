@@ -19,7 +19,7 @@ SoundSage is an advanced audio processing system that integrates automated audio
 ![SoundSage - AutoGain Workflow](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/assets/130602253/57c1aedb-5e18-4ea4-84c8-56a0aa21bd12)
 
 
- ## Macro-level Overview of Implementation:
+### Macro-level Overview of Implementation:
 
 1. **Interpreting User Prompts**: When a user provides a prompt to SoundSage, the LLM analyzes the prompt to understand the user's intent. This involves parsing the prompt, identifying key words and phrases related to audio processing tasks, and extracting any additional information that might be relevant, such as the location of the audio files to be processed.
 
@@ -29,7 +29,7 @@ SoundSage is an advanced audio processing system that integrates automated audio
 
 4. **Providing Feedback to the User**: After the audio processing tasks have been completed, the LLM generates a response to the user. This response includes information about the tasks that were performed, any changes that were made to the audio files, and the location of the processed files. The response is designed to be easily understood by the user, providing them with a clear and concise summary of the audio processing workflow.
 
- ## Micro-level Overview of Implementation:
+### Micro-level Overview of Implementation:
 
 **chatbot_code_writer.py**: This script uses the OpenAI API to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
 
@@ -58,7 +58,7 @@ AutoGain is the first of many audio tools that the SoundSage system uses to proc
 
 ## Future Tools
 
-SoundSage plans to integrate more tools for automated audio processing, including:
+#### SoundSage plans to integrate more tools for automated audio processing, including:
 
 - AutoEQ
 - AutoCompressor
@@ -70,7 +70,6 @@ SoundSage plans to integrate more tools for automated audio processing, includin
 - AutoStereo Widener
 - AutoPitch Corrector
 - AutoTime Stretcher
-
 
 The current setup is robust and capable of handling complex audio processing tasks. However, there are some trade-offs:
 
@@ -90,7 +89,8 @@ Optimize Script Interaction: Streamline communication between scripts by creatin
 
 Leverage Efficient Computing Resources: Use optimized ML libraries and compute platforms to reduce resource consumption. Also, consider using cloud-based solutions for scalable and efficient processing.
 
-Augmenting the LLM with a domain-specific model:
+#### Augmenting the LLM with a domain-specific model:
+
 a. Data Collection: Gather a substantial corpus of documents related to audio processing. This corpus could include user manuals, online forums, tutorials, and any other text that contains detailed instructions or discussions about audio processing tasks.
 
 b. Preprocessing: Clean the collected data to remove any irrelevant information, and convert it into a format that can be used for model training.
@@ -99,7 +99,7 @@ c. Model Training: Use a library like Hugging Face's transformers or spaCy to tr
 
 d. Integration: Integrate the trained model into the LLM, ensuring that the model is invoked when the LLM is interpreting user prompts related to audio processing.
 
-Optimizing Script Interaction:
+#### Optimizing Script Interaction:
 a. Identify Bottlenecks: Analyze the current script interaction process to identify any areas where inefficiencies may occur. This could involve running performance tests or reviewing the code to understand how data and commands are passed between scripts.
 
 b. Design Central Controller: Design a central controller script that will manage the flow of data and commands between scripts. This script should be designed to handle any issues identified in the bottleneck analysis.
@@ -108,7 +108,7 @@ c. Implementation: Rewrite the existing scripts as needed to interact with the c
 
 d. Testing: Run tests to confirm that the central controller is correctly managing script interactions and that the system is running more efficiently.
 
-Leveraging Efficient Computing Resources:
+#### Leveraging Efficient Computing Resources:
 
 a. Identify Resource Intensive Tasks: Identify which parts of the application are most resource-intensive. This could be done by monitoring resource usage during typical tasks.
 
