@@ -22,7 +22,7 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
 ## Contributing
 
 Thank you for considering contributing to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage)! Anyone can contribute we just ask you to adhere to our guidelines!
-For Contribution Guidelines please see [CONTRIBUTING.md](CONTRIBUTING.md). If everything looks good too you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made aswell as cite any code you may have borrowed! 
+For Contribution Guidelines please see [CONTRIBUTING.md](CONTRIBUTING.md). If everything looks good to you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made as well as cite any code you may have borrowed! 
 
 
 ##### Cheers! :)
