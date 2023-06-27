@@ -14,10 +14,17 @@ SoundSage is an advanced audio processing system that integrates automated audio
 
 ## How It Works
 
- The LLM integration process involves the LLM interpreting a user prompt, extracting key information, and using this information to execute a series of actions. The LLM is designed to interpret user prompts and translate them into a series of actions that the system can execute. This process involves a number of scripts that work together to manage files, interact with the OpenAI API, and control the AutoGain tool. These actions include navigating to the specified folder, copying the audio files, pasting them into the "PreProcess" folder, initiating the AutoGain tool, and finally copying the processed files into a new folder. The completion script then sends a signal to indicate that the process is complete and provides the user with information about the location of the processed files. Please see the SoundSage FlowChart for a full visualization of the intended process.
+ The LLM integration process involves the LLM interpreting a user prompt, extracting key information, and using this information to execute a series of actions. The LLM is designed to interpret user prompts and translate them into a series of actions that the system can execute. This process involves a number of scripts that work together to manage files, interact with the OpenAI API, and control the AutoGain tool. These actions include navigating to the specified folder, copying the audio files, pasting them into the "PreProcess" folder, initiating the AutoGain tool, and finally copying the processed files into a new folder. The completion script then sends a signal to indicate that the process is complete and provides the user with information about the location of the processedles. Please see the SoundSage FlowChart for a full visualization of the intended process.
  
 ![SoundSage - AutoGain Workflow](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/assets/130602253/57c1aedb-5e18-4ea4-84c8-56a0aa21bd12)
 
+
+**Contributing
+
+Thank you for considering contributing to our project! Anyone can contribute we just ask you to adhere to our guidelines!
+For Contribution Guidelines please see [CONTRIBUTIONS.md](CONTRIBUTIONS.md). If everything looks good too you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made aswell as cite any code you may have borrowed! 
+*The SoundSage Team
+Cheers! :)*
 
 ### Macro-level Overview of Implementation:
 
