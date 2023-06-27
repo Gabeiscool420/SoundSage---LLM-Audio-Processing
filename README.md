@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS**
 
-Welcome to SoundSage!🦉  If you are reading this then you are one of the very few aware of our journey! &#128640; 
+Welcome to SoundSage!🦉  If you are reading this then you are about to be one of the very few to learn of our journey! &#128640; 
 
 We are on a mission to create the world's first AI-based audio processing suite: The tools use AI to analyze and process audio files, improving the quality and efficiency of the audio processing workflow.
 User-friendly interface: The tool features a simple and intuitive interface, making it easy for users to navigate and use the tool.
