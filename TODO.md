@@ -6,7 +6,7 @@
 
 ## Project Directory:
 
->SoundSage 
+[>SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) 
 - [ ] [*autogain_interaction.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/autogain_interaction.py): This script contains functions for interacting with the AutoGain software. It contains functions for sending commands to the software and handling its responses.
 - [ ] [*chatbot_code_writer.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/chatbot_code_writer.py): This script uses the OpenAI API to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
 - [ ] [*completion_handling.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/completion_handling.py): This script handles the completion of the process. It contains a function for sending a signal to the LLM to respond that the process is complete and a function for checking the new folder to ensure that the process completed successfully.
