@@ -4,9 +4,9 @@
 
 A primary goal of SoundSage---LLM-Audio-Processing-Integration is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).
 
-This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
+This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-We invite all those who participate in SoundSage---LLM-Audio-Processing-Integration to help us create safe and positive experiences for everyone.
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. We invite all those who participate in SoundSage---LLM-Audio-Processing-Integration to help us create safe and positive experiences for everyone.
 
 ## 2. Open Source Citizenship
 
@@ -14,7 +14,41 @@ A supplemental goal of this Code of Conduct is to increase open source citizensh
 
 Communities mirror the societies in which they exist and positive action is essential to counteract the many forms of inequality and abuses of power that exist in society.
 
-## 3. Expected Behavior
+
+## 3. Addressing Grievances
+
+If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify the project team with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
+
+## 4. Scope
+
+This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+
+We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all community venues online and in-person–as well as in all one-on-one communications pertaining to community business.
+
+This code of conduct and its related procedures also applies to unacceptable behavior occurring outside the scope of community activities when such behavior has the potential to adversely affect the safety and well-being of community members.
+
+
+## 5. Changes
+
+We will post any changes to this Code of Conduct on this page, so please check back regularly.
+
+_Revision date: [06/26/2023]_
+
+## 6. Our Standards
+
+Examples of behavior that contributes to a positive environment for our
+community include:
+
+- Demonstrating empathy and kindness toward other people
+- Being respectful of differing opinions, viewpoints, and experiences
+- Giving and gracefully accepting constructive feedback
+- Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+- Focusing on what is best not just for us as individuals, but for the
+  overall community
+
+
+## 7. Expected Behavior
 
 The following behaviors are expected and requested of all community members:
 
@@ -24,10 +58,18 @@ The following behaviors are expected and requested of all community members:
 - Refrain from demeaning, discriminatory, or harassing behavior and speech.
 - Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
 
-## 4. Unacceptable Behavior
+## 8. Unacceptable Behavior
 
-The following behaviors are considered harassment and are unacceptable within our community:
+Examples of unacceptable behavior include:
 
+- The use of sexualized language or imagery, and sexual attention or
+  advances of any kind
+- Trolling, insulting or derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or email
+  address, without their explicit permission
+- Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 - Violence, threats of violence or violent language directed against another person.
 - Sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory jokes and language.
 - Posting or displaying sexually explicit or violent material.
@@ -39,7 +81,7 @@ The following behaviors are considered harassment and are unacceptable within ou
 - Deliberate intimidation, stalking or following (online or in person).
 - Advocating for, or encouraging, any of the above behavior.
 
-## 5. Consequences of Unacceptable Behavior
+## 9. Consequences of Unacceptable Behavior
 
 Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated.
 
@@ -47,73 +89,8 @@ Anyone asked to stop unacceptable behavior is expected to comply immediately.
 
 If a community member engages in unacceptable behavior, the community organizers may take any action they deem appropriate, up to and including a temporary ban or permanent expulsion from the community without warning (and without refund in the case of a paid event).
 
-## 6. Reporting Guidelines
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. [email protected]
-
-## 7. Addressing Grievances
-
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify the project team with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
-
-## 8. Scope
-
-We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all community venues online and in-person–as well as in all one-on-one communications pertaining to community business.
-
-This code of conduct and its related procedures also applies to unacceptable behavior occurring outside the scope of community activities when such behavior has the potential to adversely affect the safety and well-being of community members.
-
-## 9. Contact info
-
-[email protected]
-
-## 10. License and attribution
-
-This Code of Conduct is distributed under a Creative Commons Attribution-ShareAlike license.
-
-Portions of text derived from the Django Code of Conduct and the Geek Feminism Anti-Harassment Policy.
-
-## 11. Changes
-
-We will post any changes to this Code of Conduct on this page, so please check back regularly.
-
-_Revision date: [06/26/2023]_
-
-## Our Pledge
-
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
-
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
-
-## Our Standards
-
-Examples of behavior that contributes to a positive environment for our
-community include:
-
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
-
-Examples of unacceptable behavior include:
-
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
-
-## Enforcement Responsibilities
+## 10. Enforcement Responsibilities
 
 Community leaders are responsible for clarifying and enforcing our standards of
 acceptable behavior and will take appropriate and fair corrective action in
@@ -125,15 +102,12 @@ comments, commits, code, wiki edits, issues, and other contributions that are
 not aligned to this Code of Conduct, and will communicate reasons for moderation
 decisions when appropriate.
 
-## Scope
+## 11. Enforcement Guidelines
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
 
-## Enforcement
+## 12. Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
@@ -142,11 +116,6 @@ All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
 reporter of any incident.
-
-## Enforcement Guidelines
-
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
 
 ### 1. Correction
 
@@ -189,7 +158,11 @@ individual, or aggression toward or disparagement of classes of individuals.
 **Consequence**: A permanent ban from any sort of public interaction within
 the community.
 
-## Attribution
+## 13. Reporting Guidelines
+
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. [info.SoundSage@gmail.com]
+
+## 14. Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
 version 2.0, available at
@@ -203,3 +176,13 @@ enforcement ladder](https://github.com/mozilla/diversity).
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
+
+## 15. Contact info
+
+[info.SoundSage@gmail.com]
+
+## 15. License and attribution
+
+This Code of Conduct is distributed under a Creative Commons Attribution-ShareAlike license.
+
+Portions of text derived from the Django Code of Conduct and the Geek Feminism Anti-Harassment Policy.
