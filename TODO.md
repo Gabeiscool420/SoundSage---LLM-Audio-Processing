@@ -6,25 +6,27 @@
 
 ## Project Directory:
 
-SoundSage >Workbench
-
- PreProcess
-
- PostProcess
-
- Archive
-
- AudioTools
-
-    AutoGain
-
-      [x]audio_analysis.py
+*>SoundSage 
  
-     [x]audio_processor.py
+ >Workbench
 
-      [ ]main.py (this may need to be modified as it is currently a GUI for  AutoGain)
+ >PreProcess
 
-      >nenv* see actual Directory* for more details... 
+ >PostProcess
+
+ >Archive
+
+ >AudioTools
+
+   >AutoGain
+
+ - [x]audio_analysis.py
+
+ - [x]audio_processor.py
+
+ - [ ]main.py (this may need to be modified as it is currently a GUI for  AutoGain)
+
+     >nenv* see actual Directory* for more details... 
       
 - [ ] Autogain_interaction.py
 - [ ] chatbot_code_writer.py
