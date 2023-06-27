@@ -4,7 +4,7 @@
 - [ ] = exists but is not complete
 - [x] = is complete
 
-- > = Directory(stacks like: >> or >>> etc... for directory within a directory)
+- [>] = Directory(stacks like: >> or >>> etc... for directory within a directory)
 
 
 ## Project Directory:
