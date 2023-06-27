@@ -85,36 +85,37 @@ please see [requirements.txt](requirements.txt) for require modules.
 ## AutoGain
 [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) is the first of many audio tools that the [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) system uses to process audio based on a user's prompt. The [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) tool automates gain staging by analyzing the file and either boosting, turning down, or simply doing nothing to the specified file.
 
+# Useful Materials and Sources
 
 This is a list of potential modules/frameworks and tools we could use for SoundSage, if anything material could be used to study and decide how SoundSage will work. 
 
 
-1. [pyAudioProcessing](https://github.com/jsingh811/pyAudioProcessing)
+### 1. [pyAudioProcessing](https://github.com/jsingh811/pyAudioProcessing)
 
 A Python-based library for processing audio data into features (GFCC, MFCC, spectral, chroma) and building Machine Learning models.
 This was initially written using Python 3.7, updated several times using Python 3.8 and Python 3.9, and has been tested to work with Python >= 3.6, <3.10.
 
 
-2. [Deep Learning for Audio (DLA)](https://github.com/markovka17/dla)
+### 2. [Deep Learning for Audio (DLA)](https://github.com/markovka17/dla)
 
 Lecture and seminar materials for each week are in ./week* folders, see README.md for materials and instructions.
 Any technical issues, ideas, bugs in course materials, contribution ideas - add an issue.
 The current version of the course is conducted in autumn 2022 at the CS Faculty of HSE.
 
 
-3. [Waveformer (a DNN for low-latency audio processing)](https://github.com/vb000/Waveformer)
+### 3. [Waveformer (a DNN for low-latency audio processing)](https://github.com/vb000/Waveformer)
 
 This repository provides code for the Waveformer architecture proposed in the paper, Real-Time Target Sound Extraction, presented at ICASSP 2023. 
 Waveformer is a low-latency audio processing model implementing streaming inference -- the model process a ~10 ms input audio chunk at each time step, while only looking at past chunks and no future chunks. 
 On a Core i5 CPU using a single thread, real-time factors (RTFs) of different model configurations range from 0.66 to 0.94, with an end-to-end latency less than 20 ms.
 
 
-4. [pytorchforaudio](https://github.com/musikalkemist/pytorchforaudio)
+### 4. [pytorchforaudio](https://github.com/musikalkemist/pytorchforaudio)
 
 Code for the "PyTorch for Audio + Music Processing" series on The Sound of AI YouTube channel.
 
 
-5. [ASP](https://github.com/TUIlmenauAMS/ASP)
+### 5. [ASP](https://github.com/TUIlmenauAMS/ASP)
 
 Audio Signal Processing (ASP).
 It covers a range of utilities for I/O handling and Time-Frequency Decompositions and soon enough audio source separation methods. Currently supported functionallity :
@@ -131,7 +132,7 @@ Requirements :
 	•	pyglet For audio playback routines
 
 
-6. [Audio Processing](https://github.com/sleekEagle/audio_processing)
+### 6. [Audio Processing](https://github.com/sleekEagle/audio_processing)
 
 Audio processing
 
@@ -145,7 +146,7 @@ get_noise_from_sound
 return noise from an audio file. This noise has the required SNR with respect to the signal
 
 
-7. [Audio DSPy](https://github.com/jatinchowdhury18/audio_dspy)             
+### 7. [Audio DSPy](https://github.com/jatinchowdhury18/audio_dspy)             
 
 audio_dspy is a Python package for audio signal processing tools.
 Current tools include:
@@ -158,13 +159,13 @@ Current tools include:
 	•	Modal modelling tools
 
 
-8. [Plug and Plai](https://github.com/edreisMD/plugnplai) 
+### 8. [Plug and Plai](https://github.com/edreisMD/plugnplai) 
 
 Plug and Plai is an open source library aiming to simplify the integration of AI plugins into open-source language models (LLMs).
 It provides utility functions to get a list of active plugins from plugnplai.com directory, get plugin manifests, and extract OpenAPI specifications and load plugins.
 
 
-9. [OpenAI integration with Azure Cognitive-Search for document analysis](https://github.com/Anaig/OpenAI-and-Cognitive-Search)
+### 9. [OpenAI integration with Azure Cognitive-Search for document analysis](https://github.com/Anaig/OpenAI-and-Cognitive-Search)
 
 OpenAI has revolutionized the way we develop applications by providing state-of-the-art machine learning models and making it easy for developers to add AI capabilities to their applications without needing to have an extensive background in data science.
 In addition, many of the OpenAI models are available on Azure, where you can get the security capabilities of Microsoft Azure while running the same models as OpenAI. Azure OpenAI offers private networking, regional availability, and responsible AI content filtering.
@@ -196,7 +197,7 @@ For the development, it is recommended to use Visual Studio Code and Postman.
 For Visual Studio Code, you can install the Azure Function extension and the Azure Function Core Tool.
 
 
-10. [Celery AI](https://github.com/ortegaalfredo/celery-ai)
+### 10. [Celery AI](https://github.com/ortegaalfredo/celery-ai)
 
 Multiplatform OpenAI keyboard integration
 
