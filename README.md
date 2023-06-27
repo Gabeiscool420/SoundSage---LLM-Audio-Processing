@@ -9,7 +9,7 @@ User-friendly interface: The system will feature a simple and intuitive chat int
 #### Efficient workflow: 
 The tools will be designed to streamline the audio processing workflow, allowing users to process audio files quickly and easily.🛠
 #### Operating Environment:
-The product is designed to operate in a standard computing environment. It requires a computer with sufficient processing power to run the AI algorithms and enough storage space to store the audio files. &#128427;
+The product is designed to operate in a standard computing environment. It requires a computer with sufficient processing power to run the AI algorithms and enough storage space to store the audio files.
 
 
 Open-source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, the end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the original gain-staging application is very functional.
