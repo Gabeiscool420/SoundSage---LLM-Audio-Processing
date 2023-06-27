@@ -1,4 +1,4 @@
-#### SoundSage LLM Integration (text-to-audio-processing)
+# SoundSage LLM Integration (text-to-audio-processing)
 
 
    <div style="text-align: center;">
@@ -16,7 +16,7 @@ Open source Python program for automating Audio Processing using natural languag
 
 See the AutoGain branch for the Working system that does not involve an LLM, this branch is specific to the LLM Integration. 
 
-# SoundSage
+## SoundSage
 
 SoundSage is an advanced audio processing system that integrates automated audio tools with a language learning model (LLM) like OpenAI's ChatGPT. The system allows users to prompt a list of commands for audio processing, such as gain staging, balancing, subtractive EQ, noise reduction, and compression.
 
@@ -166,7 +166,7 @@ Here are some potential modules that could be used in the SoundSage LLM integrat
 
 - **torchaudio**: An audio library for PyTorch. It provides a variety of audio transforms, supports audio I/O, and has dataloaders for common audio datasets. This could be used for loading and saving audio files, as well as performing common audio transformations. The library is released under the [BSD-3-Clause](https://github.com/pytorch/audio)
 
-### Licenses
+## Licenses
 
 The licensing information for the modules and functions used in the AutoGain scripts is as follows:
 
