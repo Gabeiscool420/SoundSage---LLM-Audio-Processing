@@ -12,7 +12,7 @@ First off, thank you for considering contributing to SoundSage---LLM-Audio-Proce
 
 ## How Can I Contribute?
 
-Whether you're helping us fix bugs, improve the docs, or spread the word, we'd love to have you as part of the project! Everyone is welcome to contribute, regardless of their level of expertise.
+Whether you're helping us fix bugs, improve the docs, or spread the word, we'd love to have you as part of the project! Everyone is welcome to contribute, regardless of their level of expertise. See [TODO.md]
 
 Here's how you can make a difference:
 
