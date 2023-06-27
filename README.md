@@ -30,6 +30,7 @@ SoundSage is an advanced audio processing system that integrates automated audio
 4. **Providing Feedback to the User**: After the audio processing tasks have been completed, the LLM generates a response to the user. This response includes information about the tasks that were performed, any changes that were made to the audio files, and the location of the processed files. The response is designed to be easily understood by the user, providing them with a clear and concise summary of the audio processing workflow.
 
 ### Micro-level Overview of Implementation:
+**please see* [SoundSage To Do List](TODO.md)
 
 **chatbot_code_writer.py*: This script uses the OpenAI API to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
 
