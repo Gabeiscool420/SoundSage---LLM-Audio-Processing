@@ -52,12 +52,11 @@ SoundSage is an advanced audio processing system that integrates automated audio
 
 [*autogain_interaction.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/autogain_interaction.py): This script contains functions for interacting with the AutoGain software. It contains functions for sending commands to the software and handling its responses.
 
-*AutoGain Main* [*main.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py),[*audio_analysis.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_analysis.py) and [*audio_processor.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_processor.py): These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
-
-
 ## AutoGain
 
 AutoGain is the first of many audio tools that the SoundSage system uses to process audio based on a user's prompt. The AutoGain tool automates gain staging by analyzing the file and either boosting, turning down, or simply doing nothing to the specified file.
+
+*AutoGain Main* [*main.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py),[*audio_analysis.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_analysis.py) and [*audio_processor.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_processor.py): These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
 
 ## Future Tools
 
