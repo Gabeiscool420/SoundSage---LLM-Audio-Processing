@@ -1,11 +1,14 @@
 # SoundSage - LLM Integration(Text-to-AudioProcessing)
+
+
 <div style="text-align: center;">
   <img
     src="SoundSage-LLM Integration/LOGO.png"
     alt="Alt text"
     title="Optional title"
-    style="display: inline-block; max-width: 30px; width: 10%;">
+    style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
 </div>
+
 
 
 **WORK IN PROGRESS**
