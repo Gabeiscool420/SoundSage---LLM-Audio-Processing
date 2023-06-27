@@ -86,6 +86,134 @@ please see [requirements.txt](requirements.txt) for require modules.
 [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) is the first of many audio tools that the [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) system uses to process audio based on a user's prompt. The [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) tool automates gain staging by analyzing the file and either boosting, turning down, or simply doing nothing to the specified file.
 
 
+This is a list of potential modules/frameworks and tools we could use for SoundSage, if anything material could be used to study and decide how SoundSage will work. 
+
+
+1. [pyAudioProcessing](https://github.com/jsingh811/pyAudioProcessing)
+
+A Python-based library for processing audio data into features (GFCC, MFCC, spectral, chroma) and building Machine Learning models.
+This was initially written using Python 3.7, updated several times using Python 3.8 and Python 3.9, and has been tested to work with Python >= 3.6, <3.10.
+
+
+2. [Deep Learning for Audio (DLA)](https://github.com/markovka17/dla)
+
+Lecture and seminar materials for each week are in ./week* folders, see README.md for materials and instructions.
+Any technical issues, ideas, bugs in course materials, contribution ideas - add an issue.
+The current version of the course is conducted in autumn 2022 at the CS Faculty of HSE.
+
+
+3. [Waveformer (a DNN for low-latency audio processing)](https://github.com/vb000/Waveformer)
+
+This repository provides code for the Waveformer architecture proposed in the paper, Real-Time Target Sound Extraction, presented at ICASSP 2023. 
+Waveformer is a low-latency audio processing model implementing streaming inference -- the model process a ~10 ms input audio chunk at each time step, while only looking at past chunks and no future chunks. 
+On a Core i5 CPU using a single thread, real-time factors (RTFs) of different model configurations range from 0.66 to 0.94, with an end-to-end latency less than 20 ms.
+
+
+4. [pytorchforaudio](https://github.com/musikalkemist/pytorchforaudio)
+
+Code for the "PyTorch for Audio + Music Processing" series on The Sound of AI YouTube channel.
+
+
+5. [ASP](https://github.com/TUIlmenauAMS/ASP)
+
+Audio Signal Processing (ASP).
+It covers a range of utilities for I/O handling and Time-Frequency Decompositions and soon enough audio source separation methods. Currently supported functionallity :
+	•	WAV/MP3/AAC Reading and Writing
+	•	Time Frequency Methods : MDCT/MDST/PQMF/STFT/FrFFT(Fractional FFT)
+	•	Cepstral Analysis : Uniform Discrete Cepstrum
+	•	Misc Operations : Bark Scaling, W-Disjoint Orthogonality Measure, Gini Index Sparsity Measure, Time-frequency Masking, Noise to Mask Ratio, Psychoacoustic Model (based on non-linear superposition)
+For code usage, please refer to each class. Examples are given inside method or in the "main()" call.
+
+Requirements :
+	•	NumPy version '1.10.4' or later
+	•	SciPy version '0.17.0' or later (Crucial for avoiding poor reconstruction for the complex PQMF)
+	•	cPickle version '1.71' or later
+	•	pyglet For audio playback routines
+
+
+6. [Audio Processing](https://github.com/sleekEagle/audio_processing)
+
+Audio processing
+
+mix_noise.py
+functions to add noise to a signal provided a Signal to Noise Ratio (SNR).
+
+get_white_noise
+returns additive white gausian noise of the provided SNR with respect to the signal
+
+get_noise_from_sound
+return noise from an audio file. This noise has the required SNR with respect to the signal
+
+
+7. [Audio DSPy](https://github.com/jatinchowdhury18/audio_dspy)             
+
+audio_dspy is a Python package for audio signal processing tools.
+Current tools include:
+	•	EQ filter design
+	•	Nonlinear Processors
+	•	Sine Sweep Tools
+	•	Plotting Frequency Responses and Static Curves
+	•	Converting transfer functions to minimum or linear phase
+	•	Prony's method, and Prony's method with frequency warping
+	•	Modal modelling tools
+
+
+8. [Plug and Plai](https://github.com/edreisMD/plugnplai) 
+
+Plug and Plai is an open source library aiming to simplify the integration of AI plugins into open-source language models (LLMs).
+It provides utility functions to get a list of active plugins from plugnplai.com directory, get plugin manifests, and extract OpenAPI specifications and load plugins.
+
+
+9. [OpenAI integration with Azure Cognitive-Search for document analysis](https://github.com/Anaig/OpenAI-and-Cognitive-Search)
+
+OpenAI has revolutionized the way we develop applications by providing state-of-the-art machine learning models and making it easy for developers to add AI capabilities to their applications without needing to have an extensive background in data science.
+In addition, many of the OpenAI models are available on Azure, where you can get the security capabilities of Microsoft Azure while running the same models as OpenAI. Azure OpenAI offers private networking, regional availability, and responsible AI content filtering.
+However, even if OpenAI APIs are very easy to use and integrate, you may have faced some of these limitations:
+	•	Format: OpenAI only supports text or json format. If you want to analyze enterprise documents such as PDF, Word, PowerPoint, etc., you need to extract or transform your data.
+	•	Source: You cannot directly connect OpenAI to data storages like a database, a SharePoint or a Data Lake.
+	•	Token limitation: Depending on the model used, OpenAI requests can use up to 4097 tokens shared between prompt and completion. To analyze longer documents, the text needs to be split into multiple pieces.
+
+What is the added value of using Azure Cognitive Search with OpenAI?
+This is where Azure Cognitive Search comes as a great comes as a great complement to Azure OpenAI.
+	•	Data Integration: Azure Cognitive Search has connectors to many Data Sources to simplify data ingestion into a search index.
+	•	Data transformation: Transforms large undifferentiated file formats into into searchable text. Using the Optical Character Recognition skill, it can even process images.
+	•	Split text: The Text Split skill breaks text into chunks of text. You can specify whether you want to break the text into sentences or into pages of a particular length. This skill is useful for the maximum text length requirements in OpenAI.
+	•	Translation capabilities: The Text Translation skill evaluates text and returns the text translated to the specified target language. Microsoft Translation API supports more than 70 languages for text translation, while OpenAI has only limited support for a few other languages than English.
+Azure OpenAI can offer additional AI enrichment to your Cognitive Search index such as:
+	•	Document classification
+	•	Document summarization
+	•	New insights generation
+	•	KPI extraction
+	•	Etc.
+In this example, we will add summarization capability to the Cognitive Search index using Azure OpenAI.
+
+Requirements
+To deploy this project you'll need these Azure resources:
+	•	Azure Cognitive Search : S1 tier is recommended
+	•	Azure OpenAI: With the text model of your choice
+	•	Python Azure Functions: For this project, I used Python 3.9
+For the development, it is recommended to use Visual Studio Code and Postman.
+For Visual Studio Code, you can install the Azure Function extension and the Azure Function Core Tool.
+
+
+10. [Celery AI](https://github.com/ortegaalfredo/celery-ai)
+
+Multiplatform OpenAI keyboard integration
+
+Description
+This is a simple tool that integrates OpenAI ChatGPT and Davinci models by hooking the PC keyboard. It currently works on Linux, Mac and Windows are still buggy. It requires a OpenAI api Key, you can obtain a free evaluation Key from OpenAI by registering and then going to the user settings (https://platform.openai.com/account/api-keys)
+
+
+
+
+
+
+
+
+
+
+
+
 <div style="text-align: center;">
     <img
       src="SoundSage-LLM Integration/LOGO.png"
