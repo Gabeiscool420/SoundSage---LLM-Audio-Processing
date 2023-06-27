@@ -15,11 +15,35 @@ def send_input_to_openai(input):
     # Return the response from the API
     return response.choices[0].text.strip()
 
-def extract_info_from_response(response, keyword, default_value=None):
-    # Extract the specified information from the response
-    # This function needs to parse the response and extract the relevant information based on the keyword
-    # For simplicity, let's assume the response is a dictionary and we are extracting a value based on the keyword
-    return response.get(keyword, default_value)
+def extract_info_from_response(response):
+    # Parse the response using SpaCy
+    doc = nlp(response)
+
+    # Define a dictionary to store the extracted information
+    extracted_info = {}
+
+    # Define a list of keywords to look for
+    keywords = ["Gain-Stage", "folder", "all", "Clips", "ProTools Project"]
+
+    # Iterate over the sentences in the response
+    for sent in doc.sents:
+        # If the sentence contains any of the keywords, store the sentence as the extracted information for that keyword
+        for keyword in keywords:
+            if keyword in sent.text:
+                extracted_info[keyword] = sent.text
+
+        # Use SpaCy's named entity recognition to extract the directory name
+        for ent in sent.ents:
+            if ent.label_ == "WORK_OF_ART":
+                extracted_info["directory_name"] = ent.text
+
+    # If no sentence contains the keyword, store the default value as the extracted information for that keyword
+    for keyword in keywords:
+        if keyword not in extracted_info:
+            extracted_info[keyword] = None
+
+    # Return the extracted information
+    return extracted_info
 
 def confirm_info(keyword, value):
     # Confirm the specified information with the user
