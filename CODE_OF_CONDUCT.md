@@ -177,7 +177,14 @@ For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
 
-## 15. Contact info
+## 15. License and attribution
+
+This Code of Conduct is distributed under a Creative Commons Attribution-ShareAlike license.
+
+Portions of text derived from the Django Code of Conduct and the Geek Feminism Anti-Harassment Policy.
+
+
+## 16. Contact info
 
 [info.SoundSage@gmail.com]
 
@@ -189,8 +196,3 @@ https://www.contributor-covenant.org/translations.
       style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
 </div>
 
-## 15. License and attribution
-
-This Code of Conduct is distributed under a Creative Commons Attribution-ShareAlike license.
-
-Portions of text derived from the Django Code of Conduct and the Geek Feminism Anti-Harassment Policy.
