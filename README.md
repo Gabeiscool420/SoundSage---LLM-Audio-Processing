@@ -1,6 +1,6 @@
 # SoundSage LLM Integration (text-to-audio-processing)
 
-   <div style="text-align: center;"> **WORK IN PROGRESS**
+**WORK IN PROGRESS**
 
 
 
