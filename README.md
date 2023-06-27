@@ -17,7 +17,8 @@ SoundSage is an advanced audio processing system that integrates automated audio
   src="SoundSage-LLM Integration/LOGO.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 30px">
+  style="display: inline-block; margin: 0 auto; max-width: 30px; width: 10%;">
+
 
  ## Macro-level Overview of Implementation:
 
