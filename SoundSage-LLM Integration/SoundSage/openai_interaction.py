@@ -17,10 +17,13 @@ def send_input_to_openai(input):
 
 def extract_info_from_response(response, keyword, default_value=None):
     # Extract the specified information from the response
-    # This is a placeholder function. You would need to implement the actual extraction logic.
-    return default_value if keyword not in response else response[keyword]
+    # This function needs to parse the response and extract the relevant information based on the keyword
+    # For simplicity, let's assume the response is a dictionary and we are extracting a value based on the keyword
+    return response.get(keyword, default_value)
 
 def confirm_info(keyword, value):
     # Confirm the specified information with the user
-    # This is a placeholder function. You would need to implement the actual confirmation logic.
-    return value
+    # This function needs to interact with the user to confirm the extracted information
+    # For simplicity, let's just print the information and ask for user confirmation
+    confirmation = input(f"The {keyword} is {value}. Is this correct? (yes/no): ")
+    return confirmation.lower() == "yes"
