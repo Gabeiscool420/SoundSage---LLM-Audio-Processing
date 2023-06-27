@@ -7,7 +7,18 @@
 ## Project Directory:
 
 >SoundSage 
- 
+  
+- [ ] Autogain_interaction.py
+- [ ] chatbot_code_writer.py
+- [ ] Completion_handling.py
+- [ ] Error_handling.py 
+- [ ] File_management.py 
+- [ ] Main.py
+- [ ] Menu_functions.py 
+- [ ] Openai_interaction.py 
+- [ ] Send_button_functionality.py 
+- [ ] Template_code.py
+
     >Workbench
 
     >PreProcess
@@ -27,17 +38,6 @@
 - [ ] main.py (this may need to be modified as it is currently a GUI for  AutoGain)
 
      >nenv* see actual Directory* for more details... 
-      
-- [ ] Autogain_interaction.py
-- [ ] chatbot_code_writer.py
-- [ ] Completion_handling.py
-- [ ] Error_handling.py 
-- [ ] File_management.py 
-- [ ] Main.py
-- [ ] Menu_functions.py 
-- [ ] Openai_interaction.py 
-- [ ] Send_button_functionality.py 
-- [ ] Template_code.py
 
 ## Detailed To-Do List:
 
