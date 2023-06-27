@@ -1,3 +1,5 @@
+import os
+
 def signal_completion_to_llm():
     # Signal to the LLM that the process is complete
     print("Process complete. Signaling to LLM...")
