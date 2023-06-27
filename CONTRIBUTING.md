@@ -50,6 +50,10 @@ All Python must adhere to the [PEP 8 style guide](https://www.python.org/dev/pep
 
 This project and everyone participating in it is governed by the [SoundSage Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [info.SoundSage@gmail.com]
 
+## Thank You!
+
+Again, thank you for your contributions. You make SoundSage awesome, and we're grateful that you're helping us make it even better.
+
 <div style="text-align: center;">
     <img
       src="SoundSage-LLM Integration/LOGO.png"
@@ -57,7 +61,3 @@ This project and everyone participating in it is governed by the [SoundSage Code
       title="SoundSage Logo"
       style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
 </div>
-
-## Thank You!
-
-Again, thank you for your contributions. You make SoundSage awesome, and we're grateful that you're helping us make it even better.
