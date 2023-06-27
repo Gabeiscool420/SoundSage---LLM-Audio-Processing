@@ -82,8 +82,6 @@ For Contribution Guidelines please see [CONTRIBUTIONS.md](CONTRIBUTIONS.md). If 
 - AutoPitch Corrector
 - AutoTime Stretcher
 
-The current setup is robust and capable of handling complex audio processing tasks. However, there are some trade-offs:
-
 Precision: Depending on the quality of the user's input, the accuracy of the LLM's interpretation and the subsequent commands it generates could vary. There is a potential risk of inaccurate command generation or misinterpretation of the user's intent.
 
 Efficiency: As the system involves multiple scripts and moving parts, the process flow might not be as efficient as it could be with a more streamlined setup. Any lag in communication between scripts or modules could slow down the overall operation.
