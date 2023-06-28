@@ -26,16 +26,6 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
  
 ![SoundSage - AutoGain Workflow](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/assets/130602253/57c1aedb-5e18-4ea4-84c8-56a0aa21bd12)
 
-
-## Contributing
-
-Thank you for considering contributing to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage)! Anyone can contribute we just ask you to adhere to our guidelines!
-For Contribution Guidelines please see [CONTRIBUTING.md](CONTRIBUTING.md). If everything looks good to you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made as well as cite any code you may have borrowed! 
-
-
-##### Cheers! :)
- *The SoundSage Team*
-
 ### Macro-level Overview of Implementation:
 
 1. **Interpreting User Prompts**: When a user provides a prompt to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage), the LLM analyzes the prompt to understand the user's intent. This involves parsing the prompt, identifying key words and phrases related to audio processing tasks, and extracting any additional information that might be relevant, such as the location of the audio files to be processed.
@@ -75,20 +65,29 @@ For Contribution Guidelines please see [CONTRIBUTING.md](CONTRIBUTING.md). If ev
 
 *AutoGain Main* [*main.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py),[*audio_analysis.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_analysis.py) and [*audio_processor.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_processor.py): These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
 
+## Contributing
+
+Thank you for considering contributing to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage)! Anyone can contribute we just ask you to adhere to our guidelines!
+For Contribution Guidelines please see [CONTRIBUTING.md](CONTRIBUTING.md). If everything looks good to you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made as well as cite any code you may have borrowed! 
+
+
+##### Cheers! :)
+ *The SoundSage Team*
+
 ## Future Tools
 
 ### SoundSage plans to integrate more tools for automated audio processing, including:
 
-- AutoEQ
-- AutoCompressor
-- AutoLimiter
-- AutoReverb
-- AutoDelay
-- AutoNoise Reduction
-- AutoEnhancer
-- AutoStereo Widener
-- AutoPitch Corrector
-- AutoTime Stretcher
+- `AutoEQ`
+- `AutoDelay`
+- `AutoReverb`
+- `AutoLimiter`
+- `AutoEnhancer`
+- `AutoCompressor`
+- `AutoStereo Widener`
+- `AutoTime Stretcher`
+- `AutoPitch Corrector`
+- `AutoNoise Reduction`
 
 Precision: Depending on the quality of the user's input, the accuracy of the LLM's interpretation and the subsequent commands it generates could vary. There is a potential risk of inaccurate command generation or misinterpretation of the user's intent.
 
@@ -164,17 +163,17 @@ d. Testing: Run tests to confirm that the application is running more efficientl
 
 Here are some potential modules that could be used in the [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) LLM integration:
 
-- **transformers**: A Python library for state-of-the-art natural language processing, developed by [Hugging Face](https://huggingface.co/terms-of-service). It provides pre-trained models for several major LLMs, including [OpenAI](https://openai.com/policies/terms-of-use)'s GPT-3 and [Google's BERT](https://cloud.google.com/ai-platform/training/docs/algorithms/bert-start). The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+- `transformers`: A Python library for state-of-the-art natural language processing, developed by [Hugging Face](https://huggingface.co/terms-of-service). It provides pre-trained models for several major LLMs, including [OpenAI](https://openai.com/policies/terms-of-use)'s GPT-3 and [Google's BERT](https://cloud.google.com/ai-platform/training/docs/algorithms/bert-start). The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
-- **scikit-learn**: This is a machine learning library in Python. It features various classification, regression and clustering algorithms, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. This module is distributed under the [3-Clause BSD license​](https://github.com/scikit-learn/scikit-learn).
+- `scikit-learn`: This is a machine learning library in Python. It features various classification, regression and clustering algorithms, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. This module is distributed under the [3-Clause BSD license​](https://github.com/scikit-learn/scikit-learn).
 
-- **SoundFile**: This Python package can read and write sound files. File reading/writing is supported for many formats including WAV, FLAC, OGG, and more. This module is licensed under the [BSD 3-Clause License​](https://snyk.io/advisor/python/soundfile)​.
+- `SoundFile`: This Python package can read and write sound files. File reading/writing is supported for many formats including WAV, FLAC, OGG, and more. This module is licensed under the [BSD 3-Clause License​](https://snyk.io/advisor/python/soundfile)​.
 
-- **spaCy**: A Python library for advanced natural language processing. It provides functionalities for part-of-speech tagging, named entity recognition, and dependency parsing, among others. This could be used to enhance the LLM's ability to interpret user prompts. The library is released under the [MIT License](https://opensource.org/licenses/MIT).
+- `spaCy`: A Python library for advanced natural language processing. It provides functionalities for part-of-speech tagging, named entity recognition, and dependency parsing, among others. This could be used to enhance the LLM's ability to interpret user prompts. The library is released under the [MIT License](https://opensource.org/licenses/MIT).
 
-- **nltk (Natural Language Toolkit)**: A Python library for working with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources. This could be used to enhance the LLM's understanding of natural language. The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+- `nltk (Natural Language Toolkit)`: A Python library for working with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources. This could be used to enhance the LLM's understanding of natural language. The library is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
-- **torchaudio**: An audio library for PyTorch. It provides a variety of audio transforms, supports audio I/O, and has dataloaders for common audio datasets. This could be used for loading and saving audio files, as well as performing common audio transformations. The library is released under the [BSD-3-Clause](https://github.com/pytorch/audio)
+- `torchaudio`: An audio library for PyTorch. It provides a variety of audio transforms, supports audio I/O, and has dataloaders for common audio datasets. This could be used for loading and saving audio files, as well as performing common audio transformations. The library is released under the [BSD-3-Clause](https://github.com/pytorch/audio)
 
 ## Licenses
 
