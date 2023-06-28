@@ -16,6 +16,10 @@
 
 <p>If you contribute to the Software, you grant Licensor a non-exclusive, royalty-free license to use, modify, and distribute your contributions. You acknowledge that you will not receive any immediate compensation for your contributions. However, in the event of any kind of monetization on SoundSage's end, contributors whose contributions are used in the final product will be considered and paid upon the receipt of monetization. You represent and warrant that you have all necessary rights to grant the licenses in this section.</p>
 
+<p>A "contributor" is a copyright holder who authorizes use under this License of the Software or a work on which the Software is based. The work thus licensed is called the contributor's "contributor version".</p>
+
+<p>Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.</p>
+
 <h2>4. Disclaimer of Warranty</h2>
 
 <p>The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Software or the use or other dealings in the Software.</p>
@@ -50,8 +54,4 @@
 
 <p>Each time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.</p>
 
-<h2>12. Patents</h2>
 
-<p>A "contributor" is a copyright holder who authorizes use under this License of the Software or a work on which the Software is based. The work thus licensed is called the contributor's "contributor version".</p>
-
-<p>Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.</p>
