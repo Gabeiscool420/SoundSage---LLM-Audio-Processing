@@ -3,8 +3,10 @@
       src="SoundSage-LLM Integration/LOGO.png"
       alt="SoundSage Logo"
       title="SoundSage Logo"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+      style="display: block; margin: 0 auto; max-width: 30px; width: 25%;">
 </div>
+
+
 
 # SoundSage LLM Integration (text-to-audio-processing)
 
@@ -238,12 +240,11 @@ The licensing information for the modules and functions used in the AutoGain scr
 - [OpenAI API](https://openai.com/policies/terms-of-use): this is part of OpenAI's  [open source license](https://github.com/openai/openai-openapi/blob/master/LICENSE).
 
 
-   <div style="text-align: center;">
-    <img
-      src="SoundSage-LLM Integration/LOGO.png"
-      alt="Alt text"
-      title="Optional title"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
-   </div>
-
+<div align="center">
+   <img
+    src="SoundSage-LLM Integration/LOGO.png"
+    alt="SoundSage Logo"
+    title="SoundSage Logo"
+    style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
+</div>
 
