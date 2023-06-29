@@ -1,6 +1,6 @@
 <div align="center">
     <img
-      src="SoundSage-LLM Integration/LOGO.png"
+      src="LOGO.png"
       alt="SoundSage Logo"
       title="SoundSage Logo"
       style="display: block; margin: 0 auto; max-width: 30px; width: 15%;">
@@ -112,7 +112,7 @@ The licensing information for the modules and functions used in the AutoGain scr
 
 <div align="center">
    <img
-    src="AutoGain/LOGO.png"
+    src="LOGO.png"
     alt="SoundSage Logo"
     title="SoundSage Logo"
     style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
