@@ -98,12 +98,12 @@ Before you can use SoundSage, you need to have the following software installed 
 #### 1. Clone the repository:
 
 ```bash
-`git clone https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing.git
+git clone https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing.git
 ```
 
 #### 2. Navigate to the cloned repository:
 ```bash
-cd SoundSage---LLM-Audio-Processing`
+cd SoundSage---LLM-Audio-Processing
 ```
 
 #### 3. Install the required dependencies:
