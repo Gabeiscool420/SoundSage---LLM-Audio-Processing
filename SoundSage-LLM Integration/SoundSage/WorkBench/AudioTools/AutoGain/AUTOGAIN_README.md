@@ -70,7 +70,12 @@ Once you have the AutoGain UI open you can select the files you want to be proce
 
 ## User Interface
 
-AutoGain has a simple UI for choosing files and the intended destination directory and a button to click to begin processing.## Future Tools
+AutoGain has a simple UI for choosing files and the intended destination directory and a button to click to begin processing, please see the image below.
+
+![AutoGain GUI](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/AutoGain%20GUI.png)
+
+
+## Future Tools
 
 SoundSage plans to integrate more tools for automated audio processing, including:
 
