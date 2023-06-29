@@ -91,14 +91,26 @@ Before you can use SoundSage, you need to have the following software installed 
 
 ### Installation
 
-1. Clone the repository:
+#### 1. Clone the repository:
 
 ```bash
-- `git clone https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing.git`
+`git clone https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing.git
+```
 
-a). Navigate to the cloned repository:
-- `cd SoundSage---LLM-Audio-Processing`
+#### 2. Navigate to the cloned repository:
+```bash
+cd SoundSage---LLM-Audio-Processing`
+```
 
+#### 3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+#### 3. Run the main script to start the application:
+```bash
+python main.py
+```
 
 ## Contributing Guidelines
 
