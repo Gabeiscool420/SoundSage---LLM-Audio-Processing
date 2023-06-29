@@ -1,15 +1,24 @@
+<div align="center">
+    <img
+      src="SoundSage-LLM Integration/LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+</div>
+
 # SoundSage LLM Integration (text-to-audio-processing)
 
 **WORK IN PROGRESS**
 
-#### Welcome to SoundSage!🦉 *If you are reading this then you are about to be one of the very few to know of our journey!* &#128640; 
+#### Welcome to SoundSage!🦉 
 
-We are on a mission to create the world's first AI-based audio processing suite: The tools use AI to analyze and process audio files, improving the quality and efficiency of the audio processing workflow.
-User-friendly interface: The system will feature a simple and intuitive chat interface, making it easy for users to navigate and use the tool by simply prompting SoundSage.🦉
-#### Efficient workflow: 
-The tools will be designed to streamline the audio processing workflow, allowing users to process audio files quickly and easily.🛠
-#### Operating Environment:
-The product is designed to operate in a standard computing environment. It requires a computer with sufficient processing power to run the AI algorithms and enough storage space to store the audio files.
+*If you are reading this then you are about to be one of the very few to know of our journey!* &#128640; 
+
+We are on a mission to create the world's first AI-based audio processing suite. The tools use AI to analyze and process audio files, improving the quality and efficiency of the audio processing workflow.
+
+- **User-friendly interface**: The system will feature a simple and intuitive chat interface, making it easy for users to navigate and use the tool by simply prompting SoundSage.🦉
+- **Efficient workflow**: The tools will be designed to streamline the audio processing workflow, allowing users to process audio files quickly and easily.🛠
+- **Operating Environment**: The product is designed to operate in a standard computing environment. It requires a computer with sufficient processing power to run the AI algorithms and enough storage space to store the audio files.
 
 
 Open-source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, the end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the original gain-staging application is very functional.
@@ -20,15 +29,15 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
 
 [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage) is an advanced audio processing system that integrates automated audio tools with a language learning model (LLM) like [OpenAI API](https://openai.com/policies/terms-of-use). The system allows users to prompt a list of commands for audio processing, such as gain staging, balancing, subtractive EQ, noise reduction, and compression.
 
-## How It Works
+## Project Overview
 
  The LLM integration process involves the LLM interpreting a user prompt, extracting key information, and using this information to execute a series of actions. The LLM is designed to interpret user prompts and translate them into a series of actions that the system can execute. This process involves a number of scripts that work together to manage files, interact with the [OpenAI API](https://openai.com/policies/terms-of-use), and control the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) tool. These actions include navigating to the specified folder, copying the audio files, pasting them into the "[PreProcess](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/PreProcess)" folder, initiating the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) tool, and finally copying the processed files into a new folder. The completion script then sends a signal to indicate that the process is complete and provides the user with information about the location of the processed files. Please see the [SoundSage FlowChart](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/assets/130602253/57c1aedb-5e18-4ea4-84c8-56a0aa21bd12) for a full visualization of the intended process.
  
 ![SoundSage - AutoGain Workflow](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/assets/130602253/57c1aedb-5e18-4ea4-84c8-56a0aa21bd12)
 
-### Macro-level Overview of Implementation:
+### How it Works:
 
-1. **Interpreting User Prompts**: When a user provides a prompt to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage), the LLM analyzes the prompt to understand the user's intent. This involves parsing the prompt, identifying key words and phrases related to audio processing tasks, and extracting any additional information that might be relevant, such as the location of the audio files to be processed.
+1. **Interpreting User Prompts**: When a user provides a prompt to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage), the LLM analyzes the prompt to understand the user's intent. This involves parsing the prompt, identifying keywords and phrases related to audio processing tasks, and extracting any additional information that might be relevant, such as the location of the audio files to be processed.
 
 2. **Generating Commands**: Once the LLM has interpreted the user's prompt, it generates a list of commands for the audio processing tools. These commands are specific to the tasks that the user has requested, such as gain staging, EQ adjustment, or noise reduction. The LLM generates these commands in a format that the audio processing tools can understand and execute.
 
@@ -36,7 +45,7 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
 
 4. **Providing Feedback to the User**: After the audio processing tasks have been completed, the LLM generates a response to the user. This response includes information about the tasks that were performed, any changes that were made to the audio files, and the location of the processed files. The response is designed to be easily understood by the user, providing them with a clear and concise summary of the audio processing workflow.
 
-### Micro-level Overview of Implementation:
+### Code Documentation:
 **please see* [SoundSage To Do List](TODO.md)
 
 [*chatbot_code_writer.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/chatbot_code_writer.py): This script uses the [OpenAI API](https://openai.com/policies/terms-of-use) to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
@@ -65,11 +74,43 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
 
 *AutoGain Main* [*main.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py),[*audio_analysis.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_analysis.py) and [*audio_processor.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/audio_processor.py): These scripts are part of the AutoGain tool. They handle the analysis and processing of audio files.
 
-## Contributing
+## Getting Started
+
+To get started with SoundSage, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the required dependencies.
+3. Run the main script to start the application.
+
+### Prerequisites
+
+Before you can use SoundSage, you need to have the following software installed on your computer:
+
+- Python 3.8 or later
+- pip (Python package installer)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+- `git clone https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing.git`
+
+a). Navigate to the cloned repository:
+- `cd SoundSage---LLM-Audio-Processing`
+
+
+## Contributing Guidelines
 
 Thank you for considering contributing to [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage)! Anyone can contribute we just ask you to adhere to our guidelines!
 For Contribution Guidelines please see [CONTRIBUTING.md](CONTRIBUTING.md). If everything looks good to you then feel free to take a stab at the [SoundSage to-do list](TODO.md)! please leave a comment and document any changes you have made as well as cite any code you may have borrowed! 
 
+- Fork the repository.
+- Create a new branch for your changes.
+- Make your changes in your branch.
+- Submit a pull request with your changes.
+
+*Please make sure to update tests as appropriate.*
 
 ##### Cheers! :)
  *The SoundSage Team*
@@ -181,7 +222,7 @@ The licensing information for the modules and functions used in the AutoGain scr
 
 - `tkinter`, `PIL`, `shutil`: These are part of the Python Standard Library and are covered by the [Python Software Foundation License](https://docs.python.org/3/license.html).
 - `ffprobe`, `ffmpy`: These are licensed under the [GNU General Public License (GPL) version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
-- [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`: These are custom modules made by [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/edit/SoundSage---LLM-Integration).
+- [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`: These are custom modules made by [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/edit/SoundSage---LLM-Integration) and adhere the to [SoundSage open source license](LICENCE.me).
 - [OpenAI API](https://openai.com/policies/terms-of-use): this is part of OpenAI's  [open source license](https://github.com/openai/openai-openapi/blob/master/LICENSE).
 
 
