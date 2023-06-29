@@ -1,4 +1,12 @@
-#﻿AutoGain by SoundSage Instructions
+<div align="center">
+   <img
+    src="SoundSage-LLM Integration/LOGO.png"
+    alt="SoundSage Logo"
+    title="SoundSage Logo"
+    style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
+</div>
+
+# ﻿AutoGain by SoundSage Instructions
 
 ## AutoGain  🦉
 
