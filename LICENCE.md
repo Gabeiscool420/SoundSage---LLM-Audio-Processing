@@ -12,13 +12,36 @@
 
 <p>You may not use, modify, or distribute the Software for commercial purposes without the express written permission of the Licensor. You may not claim ownership or authorship of the Software. You may not grant a sublicense to the Software.</p>
 
-<h2>3. Contributions</h2>
+# Contributions
 
-<p>If you contribute to the Software, you grant Licensor a non-exclusive, royalty-free license to use, modify, and distribute your contributions. You acknowledge that you will not receive any immediate compensation for your contributions. However, in the event of any kind of monetization on SoundSage's end, contributors whose contributions are used in the final product will be considered and paid upon the receipt of monetization. You represent and warrant that you have all necessary rights to grant the licenses in this section.</p>
+If you choose to contribute to this Software, your contributions will be governed by the following terms:
 
-<p>A "contributor" is a copyright holder who authorizes use under this License of the Software or a work on which the Software is based. The work thus licensed is called the contributor's "contributor version".</p>
+## Grant of License
 
-<p>Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.</p>
+By contributing to the Software, you hereby grant to the Licensor, and to recipients of the Software distributed by the Licensor, a perpetual, non-exclusive, worldwide, royalty-free, and irrevocable license to use, reproduce, create derivative works of, publicly display, publicly perform, distribute, and sublicense your contributions, and any derivative works thereof, in connection with the Software and the Licensor's (and its successors' and assigns') business, including, without limitation, for promoting and redistributing part or all of the Software (and derivative works thereof) in any media formats and through any media channels. This license includes the right to use your contributions for the development and enhancement of the Software.
+
+## Representation and Warranty
+
+You represent and warrant that you have all necessary rights, licenses, consents, and permissions to grant the licenses set forth in this section. You represent that your contributions are your original works of authorship, and to the extent your contributions incorporate works of authorship owned by third parties, you represent that you have obtained all necessary permissions from the applicable third-party owners to grant the licenses set forth in this section.
+
+## Contributor
+
+A "contributor" is any person or entity that submits, contributes, or otherwise provides direct or indirect material or work to the Software, including modifications or additions to existing work. A contributor version refers to any such contributions made by a contributor to the Software.
+
+## Patent License
+
+Each contributor also grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version. This includes, but is not limited to, the right to implement any algorithms, processes, or methodologies included in the contributions.
+
+## No Guarantee of Use
+
+There is no guarantee that your contributions will be used in the final product. Decisions regarding the integration of contributions into the Software are entirely at the Licensor's discretion.
+
+## No Immediate Compensation
+
+You acknowledge that you will not receive any immediate compensation for your contributions. However, in the event of any kind of monetization on the Licensor's end, contributors whose contributions are used in the final product will be considered and paid upon the receipt of monetization. The specific terms and conditions relating to such compensation will be agreed upon in a separate agreement.
+
+Please note, contributing to the Software means accepting and adhering to these terms. If you disagree with any part of these terms, then you may not contribute to the Software.
+
 
 <h2>4. Disclaimer of Warranty</h2>
 
