@@ -91,3 +91,22 @@ SoundSage plans to integrate more tools for automated audio processing, includin
 - `AutoTime Stretcher`
 - `AutoDynamics`
 - `AutoCut/Fade`
+
+## Licenses
+
+The licensing information for the modules and functions used in the AutoGain scripts is as follows:
+
+- `tkinter`, `PIL`, `shutil`: These are part of the Python Standard Library and are covered by the [Python Software Foundation License](https://docs.python.org/3/license.html).
+- `ffprobe`, `ffmpy`: These are licensed under the [GNU General Public License (GPL) version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
+- [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) scripts: `main.py`, `audio_analysis.py`, `audio_processor.py`: These are custom modules made by [SoundSage](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/edit/SoundSage---LLM-Integration) and adhere the to [SoundSage open source license](LICENCE.me).
+- [OpenAI API](https://openai.com/policies/terms-of-use): this is part of OpenAI's  [open source license](https://github.com/openai/openai-openapi/blob/master/LICENSE).
+
+
+<div align="center">
+   <img
+    src="SoundSage-LLM Integration/LOGO.png"
+    alt="SoundSage Logo"
+    title="SoundSage Logo"
+    style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
+</div>
+
