@@ -36,17 +36,22 @@ PyCharm will automatically detect the virtual environment (venv) in the project 
 
 Open Terminal 
 Individually copy and paste the following commands into terminal to install the required packages, press enter to run the command:
-
-- `pip install librosa`
-- `pip install numpy`
-- `pip install pyloudnorm`
-- `pip install tkinter`
-- `pip install Pillow`
-
+```bash
+pip install librosa
+pip install numpy
+pip install pyloudnorm
+pip install tkinter
+pip install Pillow
+```
 *note: If pip doesn’t work try pip3, if that doesn't work try: 
-- `python3 -m pip install --upgrade pip` 
+```bash
+python3 -m pip install --upgrade pip
+```
 If none of this works it is because you need to install pip by putting this command in the terminal: 
-- `“curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py”`: Now try installing the required packages above.
+```bash
+“curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py”`
+```
+Now try installing the required packages above.
 
 ### Step 5: Run the program
 
