@@ -1,3 +1,12 @@
+<div align="center">
+    <img
+      src="LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 15%;">
+</div>
+
+
 # SoundSage Open Source License
 
 This license agreement ("Agreement") is entered into between you ("Licensee") and Gabriel Lacroix, the owner ("Licensor") of the SoundSage project ("Software"). By using, modifying, or distributing the Software, you agree to be bound by the terms of this Agreement.
@@ -73,3 +82,12 @@ You are not required to accept this License in order to receive or run a copy of
 ## 11. Automatic Licensing of Downstream Recipients
 
 Each time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.
+
+<div align="center">
+    <img
+      src="LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 15%;">
+</div>
+
