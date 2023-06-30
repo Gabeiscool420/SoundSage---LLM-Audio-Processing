@@ -211,23 +211,15 @@ For Visual Studio Code, you can install the Azure Function extension and the 
 Multiplatform OpenAI keyboard integration
 
 Description
-This is a simple tool that integrates OpenAI ChatGPT and Davinci models by hooking the PC keyboard. It currently works on Linux, Mac and Windows are still buggy. It requires a OpenAI api Key, you can obtain a free evaluation Key from OpenAI by registering and then going to the user settings (https://platform.openai.com/account/api-keys)
+This is a simple tool that integrates OpenAI ChatGPT and Davinci models by hooking the PC keyboard. It currently works on Linux, Mac and Windows are still buggy. It requires an OpenAI api Key, you can obtain a free evaluation Key from OpenAI by registering and then going to the user settings (https://platform.openai.com/account/api-keys)
 
 
-
-
-
-
-
-
-
-
-
-
-<div style="text-align: center;">
+<div align="center">
     <img
       src="SoundSage-LLM Integration/LOGO.png"
       alt="SoundSage Logo"
       title="SoundSage Logo"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+      style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
 </div>
+
+
