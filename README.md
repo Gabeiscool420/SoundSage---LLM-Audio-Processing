@@ -12,7 +12,7 @@
 
 **WORK IN PROGRESS**
 
-Currently, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. However, AutoGain the Automatic Gain-Staging tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! 
+Currently, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. However, [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the Automatic [Gain-Staging](https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html) tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! 
 
 #### Welcome to SoundSage!🦉 
 
@@ -25,7 +25,7 @@ We are on a mission to create the world's first AI-based audio processing suite.
 - **Operating Environment**: The product is designed to operate in a standard computing environment. It requires a computer with sufficient processing power to run the AI algorithms and enough storage space to store the audio files.
 
 
-Open-source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, the end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. UI is very basic but [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the original gain-staging application is very functional.
+Open-source Python program for automating Audio Processing using natural language processing. part 1 of a series for automating audio processing tasks, the end goal is to create a full set of tools for an AI to use for automating Audio processing for Music, Film, Game and any other possible applications. 
 
 See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) branch for the Working system that does not involve an LLM, this branch is specific to the LLM Integration. 
 
