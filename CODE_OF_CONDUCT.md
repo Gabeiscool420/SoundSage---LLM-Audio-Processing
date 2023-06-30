@@ -1,3 +1,12 @@
+<div align="center">
+    <img
+      src="SoundSage-LLM Integration/LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 15%;">
+</div>
+
+
 # Contributor Covenant Code of Conduct for SoundSage---LLM-Audio-Processing-Integration
 
 ## 1. Purpose
@@ -188,11 +197,13 @@ Portions of text derived from the Django Code of Conduct and the Geek Feminism A
 
 [info.SoundSage@gmail.com]
 
-<div style="text-align: center;">
+<div align="center">
     <img
       src="SoundSage-LLM Integration/LOGO.png"
       alt="SoundSage Logo"
       title="SoundSage Logo"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+      style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
 </div>
+
+
 
