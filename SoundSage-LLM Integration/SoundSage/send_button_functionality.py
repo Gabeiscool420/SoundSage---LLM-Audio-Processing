@@ -24,3 +24,4 @@ def send_button_click(event, input_field, chat_window):
         # Scroll the chat window to the bottom
         chat_window.see(tk.END)
 
+
