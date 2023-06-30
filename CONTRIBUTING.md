@@ -1,3 +1,12 @@
+<div align="center">
+    <img
+      src="SoundSage-LLM Integration/LOGO.png"
+      alt="SoundSage Logo"
+      title="SoundSage Logo"
+      style="display: block; margin: 0 auto; max-width: 30px; width: 15%;">
+</div>
+
+
 # Contributing to SoundSage---LLM-Audio-Processing-Integration
 
 
@@ -59,5 +68,5 @@ Again, thank you for your contributions. You make SoundSage awesome, and we're g
       src="SoundSage-LLM Integration/LOGO.png"
       alt="SoundSage Logo"
       title="SoundSage Logo"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 10%;">
+      style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
 </div>
