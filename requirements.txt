@@ -1,9 +1,6 @@
-tkinter==8.6
 Pillow==9.3.0
 librosa==0.8.1
 numpy==1.22.0
 pyloudnorm==0.1.0
 ffmpy==0.3.0
-shutil==1.7.0
-subprocess==1.0
-json==2.0.9
+openai
