@@ -10,7 +10,7 @@
 
 # SoundSage LLM Integration (text-to-audio-processing)
 
-<div class="panel panel-gitlab-purple">
+<div class="panel panel-info">
 **WORK IN PROGRESS**
 {: .panel-heading}
 <div class="panel-body">
