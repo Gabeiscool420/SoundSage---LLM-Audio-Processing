@@ -1,6 +1,7 @@
 import openai_interaction
 import tkinter as tk
 
+
 def send_button_click(event, input_field, chat_window):
     # Get the user's input
     user_input = input_field.get("1.0", 'end-1c')
@@ -23,5 +24,3 @@ def send_button_click(event, input_field, chat_window):
 
         # Scroll the chat window to the bottom
         chat_window.see(tk.END)
-
-

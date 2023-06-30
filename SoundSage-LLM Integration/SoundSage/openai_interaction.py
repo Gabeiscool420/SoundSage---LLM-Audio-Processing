@@ -7,7 +7,8 @@ import re
 nlp = spacy.load("en_core_web_sm")
 
 openai.organization = "YOUR ORG-ID"
-openai.api_key = os.getenv("YOUR OPENAI API-KEY")
+openai.api_key = "YOUR OPENAI API-KEY"
+
 
 def send_input_to_openai(input):
     # Send the user's input to the OpenAI API
@@ -19,6 +20,7 @@ def send_input_to_openai(input):
 
     # Return the response from the API
     return response.choices[0].text.strip()
+
 
 def extract_info_from_response(response):
     # Parse the response using SpaCy
@@ -49,6 +51,7 @@ def extract_info_from_response(response):
 
     # Return the extracted information
     return extracted_info
+
 
 def confirm_info(keyword, value):
     # Confirm the specified information with the user
