@@ -88,6 +88,6 @@ Each time you convey a covered work, the recipient automatically receives a lice
       src="LOGO.png"
       alt="SoundSage Logo"
       title="SoundSage Logo"
-      style="display: block; margin: 0 auto; max-width: 30px; width: 15%;">
+      style="display: block; margin: 0 auto; max-width: 30px; width: 5%;">
 </div>
 
