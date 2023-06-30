@@ -10,9 +10,15 @@
 
 # SoundSage LLM Integration (text-to-audio-processing)
 
+<div class="panel panel-gitlab-purple">
 **WORK IN PROGRESS**
+{: .panel-heading}
+<div class="panel-body">
 
 Currently, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. However, [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the Automatic [Gain-Staging](https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html) tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! 
+
+</div>
+</div>
 
 #### Welcome to SoundSage!🦉 
 
