@@ -63,7 +63,7 @@ This project and everyone participating in it is governed by the [SoundSage Code
 
 Again, thank you for your contributions. You make SoundSage awesome, and we're grateful that you're helping us make it even better.
 
-<div style="text-align: center;">
+<div align="center">
     <img
       src="SoundSage-LLM Integration/LOGO.png"
       alt="SoundSage Logo"
