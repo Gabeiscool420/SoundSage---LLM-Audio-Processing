@@ -1,3 +1,5 @@
+{::options parse_block_html="true" /}
+
 <div align="center">
     <img
       src="SoundSage-LLM Integration/LOGO.png"
