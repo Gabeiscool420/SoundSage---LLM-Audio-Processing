@@ -11,7 +11,8 @@
 # SoundSage LLM Integration (text-to-audio-processing)
 
 **WORK IN PROGRESS**
-Currently, the system is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. However, AutoGain the Automatic Gain-Staging tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! 
+
+Currently, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. However, AutoGain the Automatic Gain-Staging tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! 
 
 #### Welcome to SoundSage!🦉 
 
