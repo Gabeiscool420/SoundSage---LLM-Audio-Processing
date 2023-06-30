@@ -119,7 +119,13 @@ cd SoundSage---LLM-Audio-Processing
 pip install -r requirements.txt
 ```
 
-#### 4. Run the main script to start the application:
+#### 4. Navigate to SoundSage Directory:
+```bash
+cd "SoundSage-LLM Integration"
+cd SoundSage
+```
+
+#### 5. Run the main script to start the application:
 ```bash
 python main.py
 ```
