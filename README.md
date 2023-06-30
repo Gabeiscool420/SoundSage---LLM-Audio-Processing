@@ -125,7 +125,17 @@ cd "SoundSage-LLM Integration"
 cd SoundSage
 ```
 
-#### 5. Run the main script to start the application:
+#### 5. Download the spaCy English Language Model:
+
+After installing the Python package dependencies, you will need to download the spaCy English language model. This model is necessary for many of spaCy's features, including part-of-speech tagging, named entity recognition, and dependency parsing.
+
+You can download the model by running the following command in your terminal:
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
+#### 6. Run the main script to start the application:
 ```bash
 python main.py
 ```
