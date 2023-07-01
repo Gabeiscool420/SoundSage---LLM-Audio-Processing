@@ -39,10 +39,10 @@ def extract_info_from_response(response):
             if keyword in sent.text:
                 extracted_info[keyword] = sent.text
 
-        # Use SpaCy's named entity recognition to extract the directory name
-        for ent in sent.ents:
-            if ent.label_ == "WORK_OF_ART":
-                extracted_info["directory_name"] = ent.text
+    # Use regular expressions to extract the directory name
+    match = re.search(r'\/Users\/mac\/[^ ]*', response)
+    if match:
+        extracted_info["directory_name"] = match.group(0)
 
     # If no sentence contains the keyword, store the default value as the extracted information for that keyword
     for keyword in keywords:
@@ -51,6 +51,7 @@ def extract_info_from_response(response):
 
     # Return the extracted information
     return extracted_info
+
 
 
 def confirm_info(keyword, value):
