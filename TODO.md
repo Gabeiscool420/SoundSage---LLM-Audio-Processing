@@ -37,7 +37,7 @@
 
   [>>>PostProcess](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/PostProcess) *This is where the system will always move specified files to after processing.*
 
-  [>>>Archive](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/Archive)
+  [>>>Archive](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/Archive) *This is where Conversation history, Pre/Post Processed files from previous sessions as well as a report of the analysis and system operations during the course of the interaction are stored.*
 
   [>>>AudioTools](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools)*This is where the system will keep its tools set for audio processing such as [**AutoGain**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain)*
 
