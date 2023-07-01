@@ -1,22 +1,56 @@
 import openai
-import os
 import spacy
 import re
-import autogain_interaction
+import error_handling
+from autogain_interaction import autogain_keywords
+from file_management import audio_extensions, subdirectory_names
+from send_button_functionality import extracted_info
 
 # Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-openai.organization = "YOUR ORG-ID"
-openai.api_key = "YOUR OPENAI API-KEY"
+openai.organization = "org-PlTiAlDynKPPj6WZZZtze1F4"
+
+openai.api_key = "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"
+
+protools_extension = [".ptx"]
+ableton_extension = [".als"]
+garageband_extension = [".band"]
+cubase_extension = [".cpr"]
+flstudio_extension = [".flp"]
+logic_extension = [".logic"]
+reason_extension = [".rns"]
+studioone_extension = [".song"]
+bitwig_extension = [".bwp"]
+reaper_extension = [".rpp"]
+
+def daw_keywords():
+    keywords = {
+        "protools": ["ProTools", "Protools", "protools", "pts", ".ptx"] + protools_extension,
+        "ableton": ["ableton", "Ableton", "Ablton", "ablton", "Abltn", "abltn", "abl", ".als"] + ableton_extension,
+        "garageband": ["garageband", "GarageBand", "gb", ".band", "brokeman's logic"] + garageband_extension,
+        "cubase": ["cubase", "Cubase", "CB", "cub", ".cpr",] + cubase_extension,
+        "flstudio": ["flstudio", "FL Studio", "FruityLoops", "fl", "FL", "flp", ".flp"] + flstudio_extension,
+        "logic": ["logic", "Logic Pro", "logicpro", "lp", ".logic"] + logic_extension,
+        "reason": ["reason", "Reason", "rns", ".rns"] + reason_extension,
+        "studioone": ["studioone", "Studio One", "s1", ".song"] + studioone_extension,
+        "bitwig": ["bitwig", "Bitwig Studio", "bw", ".bwp"] + bitwig_extension,
+        "reaper": ["reaper", "REAPER", "rpp", ".rpp"] + reaper_extension,
+    }
+    return keywords
+
 
 def send_input_to_openai(input):
     # Send the user's input to the OpenAI API
-    response = openai.Completion.create(
-        model="text-davinci-002",
-        prompt=input,
-        max_tokens=100
-    )
+    try:
+        response = openai.Completion.create(
+            model="text-davinci-002",
+            prompt=input,
+            max_tokens=100
+        )
+    except Exception as e:
+        error_handling.handle_error(e)
+        return None
 
     # Return the response from the API
     return response.choices[0].text.strip()
@@ -29,15 +63,6 @@ def extract_info_from_response(response):
     # Define a dictionary to store the extracted information
     extracted_info = {}
 
-    # Define a list of autogain keywords to look for
-    autogain_keywords = ["Gain staging", "Input gain", "Output gain", "Unity gain", "Trim", "Preamp", "Mic preamp",
-                         "Line level", "Headroom", "Clipping", "Distortion", "Signal-to-noise ratio", "Analog gain",
-                         "Digital gain", "Fader", "VU meter", "Peak meter", "Metering", "Dynamic range", "Overdrive",
-                         "Saturation", "Amplification", "Attenuation", "Level matching", "Balanced signal",
-                         "Unbalanced signal", "Patchbay", "Mixing console", "Audio interface", "Master bus",
-                         "Channel strip", "-18 dBFS (Digital Full Scale)", "-20 dBFS", "-12 dBFS", "-6 dBFS",
-                         "0 dBFS", "-24 LUFS", "-23 LUFS", "-16 LUFS", "-14 LUFS", "-12 LUFS"]
-
     directory_keywords = ["Directory", "Folder", "File", "File management", "Organization", "Hierarchy", "Storage",
                           "Archiving", "Backup", "Naming convention", "File format", "Audio file", "Project file",
                           "Session file", "Export", "Import", "Save", "Load", "Rename", "Copy", "Move", "Delete",
@@ -49,17 +74,7 @@ def extract_info_from_response(response):
                           "Permissions", "Access control", "File transfer", "FTP (File Transfer Protocol)",
                           "Cloud storage", "File synchronization", "Metadata editor", "File conversion", "Crossfading",
                           "Crossfade", "Sample rate conversion", "Bit depth conversion"]
-    def daw_keywords()
-    protools_keywords = ["ProTools", "Protools", "protools", "pts", ".ptx"]
-    ableton_keywords = ["ableton", "Ableton", "Ablton", "ablton", "Abltn", "abltn", "abl", ".als"]
-    garageband_keywords = ["garageband", "GarageBand", "gb", ".band", "brokeman's logic"]
-    cubase_keywords = ["cubase", "Cubase", "CB", "cub", ".cpr"]
-    flstudio_keywords = ["flstudio", "FL Studio", "FruityLoops", "fl", "FL", "flp", ".flp"]
-    logic_keywords = ["logic", "Logic Pro", "logicpro", "lp", ".logic"]
-    reason_keywords = ["reason", "Reason", "rns", ".rns"]
-    studioone_keywords = ["studioone", "Studio One", "s1", ".song"]
-    bitwig_keywords = ["bitwig", "Bitwig Studio", "bw", ".bwp"]
-    reaper_keywords = ["reaper", "REAPER", "rpp", ".rpp"]
+
 
 
     # Iterate over the sentences in the response
@@ -73,45 +88,18 @@ def extract_info_from_response(response):
             if keyword in sent.text:
                 extracted_info[keyword] = sent.text
 
-        for keyword in protools_keywords:
+        for keyword in subdirectory_names:
             if keyword in sent.text:
                 extracted_info[keyword] = sent.text
 
-        for keyword in ableton_keywords:
+        for keyword in audio_extensions:
             if keyword in sent.text:
                 extracted_info[keyword] = sent.text
 
-        for keyword in garageband_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
-
-        for keyword in cubase_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
-
-        for keyword in flstudio_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
-
-        for keyword in logic_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
-
-        for keyword in reason_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
-
-        for keyword in studioone_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
-
-        for keyword in bitwig_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
-
-        for keyword in reaper_keywords:
-            if keyword in sent.text:
-                extracted_info[keyword] = sent.text
+        for keyword in daw_keywords().keys():
+            for sub_keyword in daw_keywords()[keyword]:
+                if sub_keyword in sent.text:
+                    extracted_info[keyword] = sent.text
 
     # Use regular expressions to extract the directory name and DAW project name
     directory_match = re.search(r'in the (.+?) project', response)
@@ -122,14 +110,17 @@ def extract_info_from_response(response):
     # Add the directory name to the extracted information
     extracted_info["directory_name"] = directory_name
 
-    # If the directory name contains "ProTools" as a keyword, set the project name to "ProTools"
-    if daw_keywords in directory_name:
-        extracted_info["project_name"] = "ProTools"
+    # If the prompt contains "daw_keywords" as a keyword, take the relevant keyword
+    for keyword in daw_keywords().keys():
+        if keyword in input():
+            extracted_info["project_name"] = keyword
+            break
+    else:
+        extracted_info["project_name"] = "No_daw"
+
     # Otherwise, check if the directory name contains any DAW keyword and set it as the project name
     else:
-        for keyword in protools_keywords + ableton_keywords + garageband_keywords \
-                + cubase_keywords + flstudio_keywords + logic_keywords + reason_keywords + studioone_keywords \
-                + bitwig_keywords + reaper_keywords:
+        for keyword in daw_keywords():
             if keyword in directory_name:
                 extracted_info["project_name"] = keyword
                 break
@@ -143,9 +134,7 @@ def extract_info_from_response(response):
         if keyword not in extracted_info:
             extracted_info[keyword] = None
 
-    for keyword in protools_keywords + ableton_keywords + garageband_keywords \
-            + cubase_keywords + flstudio_keywords + logic_keywords + reason_keywords + studioone_keywords \
-            + bitwig_keywords + reaper_keywords:
+    for keyword in daw_keywords().keys():
         if keyword not in extracted_info:
             extracted_info[keyword] = None
 

@@ -1,6 +1,7 @@
 import openai_interaction
 import tkinter as tk
 import file_management
+import error_handling
 
 def send_button_click(event, input_field, chat_window):
     # Get the user's input
@@ -12,7 +13,8 @@ def send_button_click(event, input_field, chat_window):
     try:
         # Send the user's input to the OpenAI API
         response = openai_interaction.send_input_to_openai(user_input)
-        print(f"Response: {response}")  # Print the response
+        if response is None:
+            raise Exception("Failed to get a response from the OpenAI API.")
 
         # Extract the necessary information from the response
         extracted_info = openai_interaction.extract_info_from_response(response)
@@ -41,7 +43,13 @@ def send_button_click(event, input_field, chat_window):
 
         # If a directory was confirmed, move the specified files to the PreProcess directory
         if confirmed_directory_path:
-            file_management.copy_files_to_preprocess(confirmed_directory_path, extracted_info["file_names"])
+            try:
+                file_management.copy_files_to_preprocess(confirmed_directory_path, extracted_info["file_names"])
+            except Exception as e:
+                error_handling.handle_error(e)
+                chat_window.insert('end', '\n' + 'ChatBot: ' + 'An error occurred while moving files: ' + str(e))
+                chat_window.see(tk.END)
+                return
 
         # Display the response in the chat window
         chat_window.insert('end', '\n' + 'ChatBot: ' + response)

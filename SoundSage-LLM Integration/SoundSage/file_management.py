@@ -2,6 +2,7 @@ import os
 import glob
 import time
 import shutil
+import error_handling
 
 protools_extension = [".ptx"]
 ableton_extension = [".als"]
@@ -22,17 +23,22 @@ def find_directory(directory_name):
     directory_paths = []
 
     # Walk through the file system
-    for dirpath, dirnames, filenames in os.walk(root_dir):
-        # If the directory name matches the specified directory name, add the directory path to the list
-        if os.path.basename(dirpath) == directory_name:
-            directory_paths.append(dirpath)
+    try:
+        for dirpath, dirnames, filenames in os.walk(root_dir):
+            # If the directory name matches the specified directory name, add the directory path to the list
+            if os.path.basename(dirpath) == directory_name:
+                directory_paths.append(dirpath)
+    except Exception as e:
+        error_handling.handle_error(e)
 
     # Return the list of directory paths
     return directory_paths
 
 def confirm_directory(directory_paths):
-    daw_extensions = [reaper_extension, bitwig_extension, studioone_extension, reason_extension, logic_extension,
-                     flstudio_extension, cubase_extension, garageband_extension, ableton_extension, protools_extension]
+    daw_extensions = protools_extension + ableton_extension + garageband_extension + cubase_extension + \
+                     flstudio_extension + logic_extension + reason_extension + studioone_extension + bitwig_extension + \
+                     reaper_extension
+
 
     # Define a list of audio file extensions
     audio_extensions = [".wav", ".mp3", ".flac", ".aiff", ".m4a", ".aac", ".ogg", ".wma", ".alac", ".pcm", ".dsd",
@@ -99,5 +105,8 @@ def copy_files_to_preprocess(directory_path, destination_path):
     # If the directory contains an audio file, copy it to the destination path
     for filename in os.listdir(directory_path):
         if any(filename.endswith(ext) for ext in audio_extensions):
-            shutil.copy2(os.path.join(directory_path, filename), destination_path)
+            try:
+                shutil.copy2(os.path.join(directory_path, filename), destination_path)
+            except Exception as e:
+                error_handling.handle_error(e)
 

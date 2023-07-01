@@ -1,4 +1,5 @@
 import os
+import error_handling
 
 def signal_completion_to_llm():
     # Signal to the LLM that the process is complete
