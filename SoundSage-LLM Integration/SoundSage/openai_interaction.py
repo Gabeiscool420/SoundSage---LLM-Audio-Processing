@@ -9,9 +9,9 @@ from send_button_functionality import extracted_info
 # Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-openai.organization = "org-PlTiAlDynKPPj6WZZZtze1F4"
+openai.organization = "YOUR ORG-ID"
 
-openai.api_key = "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"
+openai.api_key = "YOUR OPENAI API-KEY"
 
 protools_extension = [".ptx"]
 ableton_extension = [".als"]
