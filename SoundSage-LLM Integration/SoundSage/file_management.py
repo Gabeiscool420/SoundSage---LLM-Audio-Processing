@@ -3,6 +3,17 @@ import glob
 import time
 import shutil
 
+protools_extension = [".ptx"]
+ableton_extension = [".als"]
+garageband_extension = [".band"]
+cubase_extension = [".cpr"]
+flstudio_extension = [".flp"]
+logic_extension = [".logic"]
+reason_extension = [".rns"]
+studioone_extension = [".song"]
+bitwig_extension = [".bwp"]
+reaper_extension = [".rpp"]
+
 def find_directory(directory_name):
     # Define the root directory to start the search from
     root_dir = "/"
@@ -20,14 +31,24 @@ def find_directory(directory_name):
     return directory_paths
 
 def confirm_directory(directory_paths):
-    # Define a list of DAW project file extensions
-    daw_extensions = [".ptx", ".als", ".band", ".cpr", ".bpr", ".logic", ".flp", ".song"]
+    daw_extensions = [reaper_extension, bitwig_extension, studioone_extension, reason_extension, logic_extension,
+                     flstudio_extension, cubase_extension, garageband_extension, ableton_extension, protools_extension]
 
     # Define a list of audio file extensions
-    audio_extensions = [".wav", ".m4a", ".mp3", ".aiff", ".flac"]
+    audio_extensions = [".wav", ".mp3", ".flac", ".aiff", ".m4a", ".aac", ".ogg", ".wma", ".alac", ".pcm", ".dsd",
+                        ".ape", ".mp2", ".ac3", ".amr", ".au", ".dts", ".mid", ".midi", ".ra", ".rm", ".snd", ".aac",
+                        ".caf", ".cda", ".gsm", ".m3u", ".m3u8", ".opus", ".pls", ".sln", ".vox", ".wv"]
 
     # Define a list of subdirectory names to look for
-    subdirectory_names = ["Audio Files", "Stems", "Clips"]
+    subdirectory_names = ["Audio Files", "MIDI Files", "Samples", "Recordings", "Mixdowns", "Stems", "Tracks",
+                          "Session Notes", "Lyrics", "Reference Files", "Presets", "Project Backups", "Tempo Maps",
+                          "Automation", "Markers", "FX Chains", "Plugin Settings", "Mix Versions", "Reference Tracks",
+                          "Reference Videos", "Project Documentation", "Exported Files", "Mastered Files",
+                          "Bounced Files", "Processed Files", "Instrumentals", "Vocal Takes", "Editing", "Arrangement",
+                          "Session Templates", "Cues", "Revisions", "Projects", "Collaborations", "Session Logs",
+                          "Clip Library", "Effects Library", "Instrument Library", "Sound Design", "Drum Kits",
+                          "Vocal Samples", "Instrument Samples", "Ambience", "Guitar DI Tracks", "Synth Patches",
+                          "Audio Loops", "Preset Library"]
 
     # Define a list to store the confirmed directory paths
     confirmed_directory_paths = []
@@ -71,7 +92,9 @@ def find_audio_files_directory(project_directory):
 
 def copy_files_to_preprocess(directory_path, destination_path):
     # Define a list of audio file extensions
-    audio_extensions = [".wav", ".m4a", ".mp3", ".aiff", ".flac"]
+    audio_extensions = [".wav", ".mp3", ".flac", ".aiff", ".m4a", ".aac", ".ogg", ".wma", ".alac", ".pcm", ".dsd",
+                        ".ape", ".mp2", ".ac3", ".amr", ".au", ".dts", ".mid", ".midi", ".ra", ".rm", ".snd", ".aac",
+                        ".caf", ".cda", ".gsm", ".m3u", ".m3u8", ".opus", ".pls", ".sln", ".vox", ".wv"]
 
     # If the directory contains an audio file, copy it to the destination path
     for filename in os.listdir(directory_path):
