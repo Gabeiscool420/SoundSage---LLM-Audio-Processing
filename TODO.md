@@ -37,9 +37,9 @@
 
   [>>>PostProcess](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/PostProcess) *This is where the system will always move specified files to after processing.*
 
-  [>>>Archive](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/Archive)
+  [>>>Archive](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/Archive) *This is where Conversation history, Pre/Post Processed files from previous sessions as well as a report of the analysis and system operations during the course of the interaction are stored.*
 
-  [>>>AudioTools](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools)
+  [>>>AudioTools](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools)*This is where the system will keep its tools set for audio processing such as [**AutoGain**](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain)*
 
 [  ](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage)  [>>>>AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain)
 
@@ -49,7 +49,7 @@
 
 - [x] [main.py](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain/main.py) (this may need to be modified as it is currently a GUI for  AutoGain)
 
-please see [requirements.txt](requirements.txt) for require modules.
+*please see **[requirements.txt](requirements.txt)** for required modules.*
 
 ## Detailed To-Do List:
 
