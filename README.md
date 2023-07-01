@@ -12,7 +12,7 @@
 
 **WORK IN PROGRESS**
 
-Currently, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. However, [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the Automatic [Gain-Staging](https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html) tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! 
+Currently,[AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the Automatic [Gain-Staging](https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html) tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! However, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. Please see Contributing if you would like to help.   
 
 #### Welcome to SoundSage!🦉 
 
