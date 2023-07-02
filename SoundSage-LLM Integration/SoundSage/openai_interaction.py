@@ -10,14 +10,14 @@ from autogain_interaction import autogain_keywords
 # Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-openai.organization = "YOUR ORG-ID"
-openai.api_key = "YOUR OPENAI API-KEY"
+openai.organization = "Your org-ID"
+openai.api_key = "Your OpenAI API Key"
 
-directory_keywords = ["Directory", "Folder", "File", "File management", "Organization", "Hierarchy", "Storage",
-                      "Archiving", "Backup", "Naming convention", "File format", "Audio file", "Project file",
-                      "Session file", "Export", "Import", "Save", "Load", "Rename", "Copy", "Move", "Delete",
-                      "Create", "Duplicate", "Archive", "Batch processing", "Batch export", "Metadata", "Tagging",
-                      "Catalogue", "Library", "Project", "Project folder", "Session folder"]
+
+def directory_keywords():
+    keywords = {"Directory", "Folder", "file folder", "foldre", "driectory", "dircetory", "directroy", "directory", "dir"
+                }
+    return keywords
 
 
 def daw_keywords():
@@ -72,7 +72,7 @@ def extract_info_from_response(response):
             if keyword in sent.text:
                 extracted_keywords[keyword] = sent.text
 
-        for keyword in directory_keywords:
+        for keyword in directory_keywords():
             if keyword in sent.text:
                 extracted_keywords[keyword] = sent.text
 
@@ -101,7 +101,7 @@ def extract_info_from_response(response):
     # If the prompt contains "daw_keywords" as a keyword, take the relevant keyword
     project_name_found = False
     for keyword in daw_keywords().keys():
-        if keyword in input:
+        if keyword in response:
             extracted_keywords["project_name"] = keyword
             project_name_found = True
             break
@@ -119,7 +119,7 @@ def extract_info_from_response(response):
         if keyword not in extracted_keywords:
             extracted_keywords[keyword] = None
 
-    for keyword in directory_keywords:
+    for keyword in directory_keywords():
         if keyword not in extracted_keywords:
             extracted_keywords[keyword] = None
 

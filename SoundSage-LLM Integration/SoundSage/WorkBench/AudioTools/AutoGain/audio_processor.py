@@ -3,6 +3,7 @@ import ffmpy
 import shutil
 import subprocess
 import json
+
 def process_audio(audio_file, analyzed_data, output_directory):
     target_lufs = -18
     headroom = 18
@@ -35,5 +36,3 @@ def process_audio(audio_file, analyzed_data, output_directory):
     else:
         # No processing needed, just copy the input file to the output file
         shutil.copyfile(audio_file, output_file)
-
-

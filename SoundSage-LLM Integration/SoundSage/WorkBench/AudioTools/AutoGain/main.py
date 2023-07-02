@@ -10,15 +10,18 @@ def open_files():
     audio_files = list(filedialog.askopenfilenames(filetypes=[("Audio files", "*.wav")]))
     file_label.config(text=" ".join(audio_files))
 
+
 def choose_output_directory():
     global output_directory
     output_directory = filedialog.askdirectory()
     output_label.config(text=output_directory)
 
+
 def begin_process():
     for audio_file in audio_files:
         analyzed_data = audio_analysis.analyze_audio(audio_file)
         audio_processor.process_audio(audio_file, analyzed_data, output_directory)
+
 
 root = tk.Tk()
 root.title("AutoGain by SoundSage")
