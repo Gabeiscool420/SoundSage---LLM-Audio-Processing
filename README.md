@@ -12,7 +12,10 @@
 
 **WORK IN PROGRESS**
 
-Currently,[AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the Automatic [Gain-Staging](https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html) tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! However, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. Please see Contributing if you would like to help.   
+Currently,[AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the Automatic [Gain-Staging](https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html) tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! However, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. Please see Contributing if you would like to help.
+
+### *Update*
+The "ChatBot" UI is currently operational however we are still working on developing the functions to enable it to move files around in the computer based on a user prompt. 
 
 #### Welcome to SoundSage!🦉 
 
@@ -175,26 +178,6 @@ Precision: Depending on the quality of the user's input, the accuracy of the LLM
 Efficiency: As the system involves multiple scripts and moving parts, the process flow might not be as efficient as it could be with a more streamlined setup. Any lag in communication between scripts or modules could slow down the overall operation.
 
 Resource Consumption: The application may require significant processing power and memory to run efficiently, especially for large audio files or complex audio processing tasks.
-
- ## Proposed Solution:
-
-**To enhance the algorithm's performance and improve the existing ML algorithm's accuracy:**
-
-Augment the LLM with a domain-specific model: A domain-specific NLP model trained on a corpus of audio processing-related documents and instructions can supplement the LLM to improve the precision of command interpretation and generation. This model could use libraries like [Hugging Face](https://huggingface.co/terms-of-service)'s transformers or [spaCy](https://spacy.io/api/doc) for added language processing capabilities.
-
-Optimize Script Interaction: Streamline communication between scripts by creating a central controller script to manage the flow of data and commands. This approach could boost efficiency and speed up operations.
-
-Leverage Efficient Computing Resources: Use optimized ML libraries and compute platforms to reduce resource consumption. Also, consider using cloud-based solutions for scalable and efficient processing.
-
-### Augmenting the LLM with a domain-specific model:
-
-a. Data Collection: Gather a substantial corpus of documents related to audio processing. This corpus could include user manuals, online forums, tutorials, and any other text that contains detailed instructions or discussions about audio processing tasks.
-
-b. Preprocessing: Clean the collected data to remove any irrelevant information, and convert it into a format that can be used for model training.
-
-c. Model Training: Use a library like [Hugging Face](https://huggingface.co/terms-of-service)'s transformers or [spaCy](https://spacy.io/api/doc) to train a domain-specific model on the preprocessed data.
-
-d. Integration: Integrate the trained model into the LLM, ensuring that the model is invoked when the LLM is interpreting user prompts related to audio processing.
 
 ### Optimizing Script Interaction:
 a. Identify Bottlenecks: Analyze the current script interaction process to identify any areas where inefficiencies may occur. This could involve running performance tests or reviewing the code to understand how data and commands are passed between scripts.
