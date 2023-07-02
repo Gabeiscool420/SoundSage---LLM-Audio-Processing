@@ -15,7 +15,7 @@
 Currently,[AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/tree/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/WorkBench/AudioTools/AutoGain) the Automatic [Gain-Staging](https://www.izotope.com/en/learn/gain-staging-what-it-is-and-how-to-do-it.html) tool is fully functional and ready to use, this is just one factor of the Audio Suite with many more to come in the near future! However, the SoundSage Audio Suite is non-operational. Thank you for your patience while we work out the logistics and further plan the scope of the project. Please see Contributing if you would like to help.
 
 ### *Update*
-The "ChatBot" UI is currently operational however we are still working on developing the functions to enable it to move files around in the computer based on a user prompt. 
+The "ChatBot" UI is currently operational however we are still working on developing the functions to enable it to parse specific task-related keywords into commands to move files around in the computer based on the information extracted from a users prompt. 
 
 #### Welcome to SoundSage!🦉 
 
