@@ -11,7 +11,6 @@ from autogain_interaction import autogain_keywords
 nlp = spacy.load("en_core_web_sm")
 
 openai.organization = "YOUR ORG-ID"
-
 openai.api_key = "YOUR OPENAI API-KEY"
 
 directory_keywords = ["Directory", "Folder", "File", "File management", "Organization", "Hierarchy", "Storage",
