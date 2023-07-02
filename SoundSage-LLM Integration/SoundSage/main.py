@@ -7,7 +7,7 @@ import send_button_functionality
 def main():
     # Initialize the application
     root = Tk()
-    root.title("Chat Bot")
+    root.title("SoundSage Audio-Suite")
     root.geometry("400x500")
     root.resizable(width=False, height=False)
 
@@ -33,8 +33,8 @@ def main():
     chatwindow.place(x=6, y=6, height=385, width=370)
 
     # Create the message window
-    messagewindow = Text(root, bd=0, bg="black", width=260, height="4", font=("Arial", 23), foreground="#00ffff")
-    messagewindow.place(x=128, y=400, height=88, width=260)
+    input_field = Text(root, bd=0, bg="black", width=260, height="4", font=("Arial", 23), foreground="#00ffff")
+    input_field.place(x=128, y=400, height=88, width=260)
 
     # Create the scrollbar
     scrollbar = Scrollbar(root, command=chatwindow.yview, cursor="star")
@@ -43,7 +43,7 @@ def main():
     # Create the send button
     sendbutton = Button(root, text="Send", width="12", height=5,
                         bd=0, bg="#0080FF", activebackground="#000BFF", foreground='#FFFFFF', font=("Arial", 12),
-                        command=lambda: send_button_functionality.send_button_click(None, messagewindow, chatwindow))
+                        command=lambda: send_button_functionality.send_button_click(input_field, chatwindow))
     sendbutton.place(x=6, y=400, height=88)
 
     # Run the application

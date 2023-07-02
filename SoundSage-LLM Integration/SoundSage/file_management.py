@@ -2,37 +2,7 @@ import os
 import glob
 import shutil
 import traceback
-
-protools_extension = [".ptx"]
-ableton_extension = [".als"]
-garageband_extension = [".band"]
-cubase_extension = [".cpr"]
-flstudio_extension = [".flp"]
-logic_extension = [".logic"]
-reason_extension = [".rns"]
-studioone_extension = [".song"]
-bitwig_extension = [".bwp"]
-reaper_extension = [".rpp"]
-
-daw_extensions = [protools_extension, ableton_extension, garageband_extension, cubase_extension, flstudio_extension,
-                  logic_extension, reason_extension, studioone_extension, bitwig_extension, reaper_extension]
-
-daw_extensions = [ext for sublist in daw_extensions for ext in sublist]
-
-# Define a list of audio file extensions
-audio_extensions = [".wav", ".mp3", ".flac", ".aiff", ".m4a", ".aac", ".ogg", ".wma", ".alac",
-                    ".pcm", ".dsd", ".ape", ".mp2", ".ac3", ".amr", ".au", ".dts", ".mid", ".midi", ".ra", ".rm", ".snd",
-                    ".aac", ".caf", ".cda", ".gsm", ".m3u", ".m3u8", ".opus", ".pls", ".sln", ".vox", ".wv"]
-
-# Define a list of subdirectory names to look for
-subdirectory_names = ["Audio Files", "Samples", "Recordings", "Mixdowns", "Stems", "Tracks", "Reference Files",
-                      "Presets", "Project Backups", "Mix Versions", "Reference Tracks", "Exported Files", "Mastered Files",
-                      "Bounced Files", "Processed Files", "Instrumentals", "Vocal Takes", "Projects", "Clip Library",
-                      "Sound Design", "Drum Kits", "Vocal Samples", "Instrument Samples", "Ambience", "Guitar DI Tracks",
-                      "Audio Loops", "Preset Library", "audio files", "Clips", "Bounces", "Render folder",
-                      "Audio assets", "Audio clips", "Audio stems", "Rendered files", "Mixdown"]
-
-
+from openai_interaction import audio_extensions, subdirectory_names
 def confirm_directory(directory_name):
     # Define a list to store the confirmed directory paths
     confirmed_directory_paths = []

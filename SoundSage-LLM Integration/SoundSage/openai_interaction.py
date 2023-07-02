@@ -2,21 +2,73 @@ import traceback
 import openai
 import spacy
 import re
-from file_management import audio_extensions, subdirectory_names, protools_extension, ableton_extension, \
-    garageband_extension, cubase_extension, flstudio_extension, logic_extension, reason_extension, studioone_extension, \
-    bitwig_extension, reaper_extension
-from autogain_interaction import autogain_keywords
 
 # Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-openai.organization = "Your org-ID"
-openai.api_key = "Your OpenAI API Key"
+openai.organization = "YOUR ORG_ID"
+openai.api_key = "YOUR OPENAI API-KEY"
 
+def send_input_to_openai(user_input):
+    # Send the user's input to the OpenAI API
+    try:
+        response = openai.Completion.create(
+            model="text-davinci-002",
+            prompt=user_input,
+            max_tokens=100
+        )
+    except openai.OpenAIError as e:  # Catch specific OpenAI errors
+        print(f"Error in send_input_to_openai: {e}")  # Use the exception object in your print statement
+        print(traceback.format_exc())
+        return None
+
+    # Return the response from the API
+    return response.choices[0].text.strip()
+
+
+protools_extension = [".ptx"]
+ableton_extension = [".als"]
+garageband_extension = [".band"]
+cubase_extension = [".cpr"]
+flstudio_extension = [".flp"]
+logic_extension = [".logic"]
+reason_extension = [".rns"]
+studioone_extension = [".song"]
+bitwig_extension = [".bwp"]
+reaper_extension = [".rpp"]
+
+
+daw_extensions = [protools_extension, ableton_extension, garageband_extension, cubase_extension, flstudio_extension,
+                  logic_extension, reason_extension, studioone_extension, bitwig_extension, reaper_extension]
+
+daw_extensions = [ext for sublist in daw_extensions for ext in sublist]
+
+# Define a list of audio file extensions
+audio_extensions = [".wav", ".mp3", ".flac", ".aiff", ".m4a", ".aac", ".ogg", ".wma", ".alac",
+                    ".pcm", ".dsd", ".ape", ".mp2", ".ac3", ".amr", ".au", ".dts", ".mid", ".midi", ".ra", ".rm", ".snd",
+                    ".aac", ".caf", ".cda", ".gsm", ".m3u", ".m3u8", ".opus", ".pls", ".sln", ".vox", ".wv"]
 
 def directory_keywords():
     keywords = {"Directory", "Folder", "file folder", "foldre", "driectory", "dircetory", "directroy", "directory", "dir"
                 }
+    return keywords
+
+# Define a list of subdirectory names to look for
+subdirectory_names = ["Audio Files", "Samples", "Recordings", "Mixdowns", "Stems", "Tracks", "Reference Files",
+                      "Presets", "Project Backups", "Mix Versions", "Reference Tracks", "Exported Files", "Mastered Files",
+                      "Bounced Files", "Processed Files", "Instrumentals", "Vocal Takes", "Projects", "Clip Library",
+                      "Sound Design", "Drum Kits", "Vocal Samples", "Instrument Samples", "Ambience", "Guitar DI Tracks",
+                      "Audio Loops", "Preset Library", "audio files", "Clips", "Bounces", "Render folder",
+                      "Audio assets", "Audio clips", "Audio stems", "Rendered files", "Mixdown"]
+
+def autogain_keywords():
+    keywords = {"Gain staging", "gain", "stage", "gain stage", "set", "the", "set the", "Set the Levels",
+                "Set the 'autogain_keywords'", "Use Autogain", "automatically", "automate"
+                "Line level", "Headroom", "Clipping", "Distortion", "do the gain stage", "Analog gain",
+                "Digital gain", "VU meter", "Peak meter", "Metering", "Balance", "signal", "-18 dBFS",
+                "-20 dBFS", "-12 dBFS", "-6 dBFS", "0 dBFS", "-24 LUFS", "-23 LUFS", "-18 LUFS", "-16 LUFS",
+                "-14 LUFS", "-12 LUFS"
+    }
     return keywords
 
 
@@ -36,23 +88,6 @@ def daw_keywords():
     return keywords
 
 
-def send_input_to_openai(user_input):
-    # Send the user's input to the OpenAI API
-    try:
-        response = openai.Completion.create(
-            model="text-davinci-002",
-            prompt=user_input,
-            max_tokens=100
-        )
-    except openai.OpenAIError as e:  # Catch specific OpenAI errors
-        print(f"Error in send_input_to_openai: {e}")  # Use the exception object in your print statement
-        print(traceback.format_exc())
-        return None
-
-    # Return the response from the API
-    return response.choices[0].text.strip()
-
-
 def extract_info_from_response(response):
     # Parse the response using SpaCy
     try:
@@ -70,7 +105,7 @@ def extract_info_from_response(response):
         # If the sentence contains any of the keywords, store the sentence as the extracted information for that keyword
         for keyword in autogain_keywords:
             if keyword in sent.text:
-                extracted_keywords[keyword] = sent.text
+                    extracted_keywords[keyword] = sent.text
 
         for keyword in directory_keywords():
             if keyword in sent.text:
@@ -103,7 +138,7 @@ def extract_info_from_response(response):
     for keyword in daw_keywords().keys():
         if keyword in response:
             extracted_keywords["project_name"] = keyword
-            project_name_found = True
+                project_name_found = True
             break
 
     if not project_name_found:
@@ -114,18 +149,18 @@ def extract_info_from_response(response):
                 extracted_keywords["project_name"] = keyword
                 break
 
-    # If no sentence contains the keyword, store the default value as the extracted information for that keyword
-    for keyword in autogain_keywords:
-        if keyword not in extracted_keywords:
-            extracted_keywords[keyword] = None
+        # If no sentence contains the keyword, store the default value as the extracted information for that keyword
+        for keyword in autogain_keywords:
+            if keyword not in extracted_keywords:
+                extracted_keywords[keyword] = None
 
-    for keyword in directory_keywords():
-        if keyword not in extracted_keywords:
-            extracted_keywords[keyword] = None
+        for keyword in directory_keywords():
+            if keyword not in extracted_keywords:
+                extracted_keywords[keyword] = None
 
-    for keyword in daw_keywords().keys():
-        if keyword not in extracted_keywords:
-            extracted_keywords[keyword] = None
+        for keyword in daw_keywords().keys():
+            if keyword not in extracted_keywords:
+                extracted_keywords[keyword] = None
 
     # Extract the name of the directory and DAW project from the user's input
     directory_match = re.search(r"'(.+?)' Folder", response)
@@ -139,7 +174,6 @@ def extract_info_from_response(response):
 
     # Return the extracted information
     return extracted_keywords
-
 
 def confirm_info(extracted_info):
     # Confirm the extracted information with the user
