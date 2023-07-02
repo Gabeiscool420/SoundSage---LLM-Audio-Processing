@@ -55,8 +55,6 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
 ### Code Documentation:
 **please see* [SoundSage To Do List](TODO.md)
 
-[*chatbot_code_writer.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/chatbot_code_writer.py): This script uses the [OpenAI API](https://openai.com/policies/terms-of-use) to generate Python code based on the user's input. It modifies a template code to create a new script that can be executed by the system.
-
 [*openai_interaction.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/openai_interaction.py): This script uses the [OpenAI API](https://openai.com/policies/terms-of-use) to Parse Keywords and compiles a command list for the system to execute.
 
 [*file_management.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/file_management.py): This script handles file management tasks. It contains functions for navigating to a specified folder, copying files, and pasting files.
@@ -64,8 +62,6 @@ See the [AutoGain](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Proces
 [*error_handling.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/error_handling.py): This script handles errors that might occur during the execution of your application. It also contains functions for providing progress updates to the user.
 
 [*completion_handling.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/completion_handling.py): This script handles the completion of the process. It contains a function for sending a signal to the LLM to respond that the process is complete and a function for checking the new folder to ensure that the process completed successfully.
-
-[*template_code.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/template_code.py): This script contains the template code that the chatbot modifies. It is designed to work with the specified files and directories.
 
 *SoundSage Main* [*main.py*](https://github.com/Gabeiscool420/SoundSage---LLM-Audio-Processing/blob/SoundSage---LLM-Integration/SoundSage-LLM%20Integration/SoundSage/main.py): This is the main script that runs your application. It imports and uses the functions from the other scripts.
 
