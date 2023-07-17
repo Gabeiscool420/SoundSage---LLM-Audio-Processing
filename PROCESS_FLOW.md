@@ -7,8 +7,11 @@ Output: User's text prompt</p>
 def get_user_prompt():   
     
 ##### #TODO: Implement function to get user's text prompt                       
-pass                                                                       
+pass     
+</code></pre>
+</div>
 
+<pre><code class="language-python">
 def validate_user_prompt(prompt):                                              
 ##### #TODO: Implement function to validate user's text prompt                  
 pass
