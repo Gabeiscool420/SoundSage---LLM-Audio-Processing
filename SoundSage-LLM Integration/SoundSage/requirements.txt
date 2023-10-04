@@ -1,4 +1,4 @@
-Pillow==9.3.0
+Pillow==10.0.1
 librosa==0.8.1
 numpy==1.22.0
 pyloudnorm==0.1.0
